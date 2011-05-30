@@ -1,0 +1,4 @@
+syntax: glob
+scripts/dojo*/*
+.idea
+Design

@@ -1,0 +1,141 @@
+@import "common.less";
+
+@default_color: white;
+@default_shadow_color: rgba(0, 0, 0, 0.40);
+
+body {
+    color: @default_color;
+	width: 100%;
+	height: 100%;
+	background-color: #060403;
+    font-size: 80%;
+}
+
+a {
+    color: @default_color;
+    text-decoration: none;
+
+    &:hover {
+        color: black;
+
+        img {
+            border-color: black !important;
+        }
+    }
+}
+
+#index {
+    color: white;
+    text-shadow: 0 2px 1px @default_shadow_color;
+
+    h2 {
+        font-family: "Avante Garde";
+    }
+
+    header {
+        h1 {
+            text-indent: -9999px;
+            width: 419px;
+            height: 45px;
+            background: url('../images/title_big.png') no-repeat;
+        }
+
+        h3, nav {
+            margin-left: 67px;
+        }
+
+        h3 {
+            font-size: 19px;
+            margin-top: 21px;
+            margin-bottom: 33px;
+        }
+
+        h2 {
+            font-size: 31px;
+            font-weight: bold;
+            margin-bottom: 17px;
+        }
+    }
+
+    aside {
+        h2 {
+            font-weight: bold;
+            font-size: 14px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        h2:not(:first-child){
+            margin-top: 17px;
+        }
+
+        blockquote {
+            padding-left: 25px;
+            text-indent: -25px;
+
+            q {
+                font-size: 40px;
+                font-weight: bold;
+                line-height: 6px;
+                height: 18px;
+                display: inline-block;
+                overflow: hidden;
+                vertical-align: top;
+                width: 21px;
+                margin-top: -2px;
+
+                canvas {
+                    margin-left: 25px;
+                }
+            }
+
+            cite {
+                font-size: 12px;
+                font-weight: normal;
+                line-height: 17px;
+            }
+        }
+
+        img {
+            border: 3px solid white;
+            .border-radius(3px);
+            .box-shadow(0px, 2px, 1px, @default_shadow_color);
+
+            /*&:hover {
+                border
+            }*/
+        }
+    }
+}
+
+#index {
+    @outer_gap: 100px;
+    @inner_gap: 58px;
+
+	background: url('../images/wood.jpg') no-repeat bottom center;
+	.background-size(cover);
+
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+    header, aside {
+        position: absolute;
+        top: 30%;
+        max-width: 50%;
+        box-sizing: border-box;
+    }
+
+	header {
+        right: 50%;
+        padding-left: @outer_gap;
+        padding-right: @inner_gap/2;
+	}
+
+	aside {
+        left: 50%;
+        margin-top: 70px;
+        padding-right: @outer_gap;
+        padding-left: @inner_gap/2;
+	}
+}
