@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portfolio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema.xsd">
+	<piece>
+		<title>Cheese Night</title>
+		<client>Tech House</client>
+		<medium>Tableslip</medium>
+		<year>2009</year>
+		<description>I wanted to create a more classical look, but not to overdo it with flashy fonts and flourishes. The spatial balance, typography, and clean simplicity reflected the attitude of the event: refined and distinguished.</description>
+		<src>cheesenight.jpg</src>
+	</piece>
+	<piece>
+		<title>Euro Dance</title>
+		<client>Tech House</client>
+		<medium>Tableslip</medium>
+		<year>2009</year>
+		<description>As an advertisement for a dance party, this design aimed to be effective by showing an exciting scene. The silhouettes were chosen to look joyful and energetic. Below, the details are presented in an ornate style to give the design a unique style.</description>
+		<src>eurodance.jpg</src>
+	</piece>
+	<piece>
+		<title>Firecream</title>
+		<client>Tech House</client>
+		<medium>Tableslip</medium>
+		<year>2009</year>
+		<description>One challenge faced in this design was the name of the event. House members all know what Firecream is, but it makes no sense for everyone else. I decided to describe the event so that people could understand what happened and minimize the fact that it had a silly name. <em>Ice Cream, Beside a roaring fireplace</em> is more attractive and makes more sense.</description>
+		<src>firecream.jpg</src>
+	</piece>
+	<piece>
+		<title>Helium Party</title>
+		<client>Tech House</client>
+		<medium>Tableslip</medium>
+		<year>2008</year>
+		<description>The first thing that came to mind was to create a design with helium balloons. The second idea was to have content that looked nothing like helium, but was funny, a little puzzling, related to the idea of floating, and (most of all) memorable.</description>
+		<src>heliumparty.jpg</src>
+	</piece>
+	<piece>
+		<title>Javaspook 2008</title>
+		<client>Tech House</client>
+		<medium>Tableslip</medium>
+		<year>2008</year>
+		<description>This design continued in the proud, slick-looking Tech House tradition of tableslips with lots of black ink. They tend to stand out well when they are deployed. The high-contrast moon and large white text stand out from the dark background.</description>
+		<src>javaspook2008.jpg</src>
+	</piece>
+	<piece>
+		<title>Javaspook 2009</title>
+		<client>Tech House</client>
+		<medium>Tableslip</medium>
+		<year>2009</year>
+		<description>The main focus of this design is the grid of six items in the center, representing the major selling points of this event. The content of each cell was chosen to be easy to recognize, obvious in meaning, and dark enough to starkly stand out against the light background.</description>
+		<src>javaspook2009.jpg</src>
+	</piece>
+	<piece>
+		<title>Mafia</title>
+		<client>Tech House</client>
+		<medium>Tableslip</medium>
+		<year>2009</year>
+		<description>A game like Mafia calls for a dark tableslip design with grunge fonts, a dirty background texture, and gentlemen in suits. A little bit of Fake Italiano never hurts, either.</description>
+		<src>mafia.jpg</src>
+	</piece>
+	<piece>
+		<title>Apples to Apples</title>
+		<client>Tech House</client>
+		<medium>Tableslip</medium>
+		<year>2008</year>
+		<description>An orange makes a prominent appearance in this design because orange slices were served during the game, and the event was almost called <em>Oranges to Oranges</em>. I am very happy with this design. The lady is excited, and human faces draw the viewer's attention like a magnet, especially when they are looking at important information. Second, the text on a slant looks very spiffy. Slab serif seals the deal.</description>
+		<src>apples.jpg</src>
+	</piece>
+	<piece>
+		<title>Spam Poetry</title>
+		<client>Tech House</client>
+		<medium>Tableslip</medium>
+		<year>2009</year>
+		<description>Using 3D techniques to make the text look more like it physically exists in the scene. The source image captured the heart of the event's experience quite well.</description>
+		<src>spampoetry.jpg</src>
+	</piece>
+	<piece>
+		<title>Stuff Night</title>
+		<client>Tech House</client>
+		<medium>Flyer</medium>
+		<year>2009</year>
+		<description>Unlike many other Tech House publications, this design was whipped up to be passed around in the evening during A Day on College Hill. Prospective freshmen were welcomed to attend our Stuff Night, so the target audience was a 17-year-old who may not even know about Tech House, but was making plans for that evening. Also, the viewer would be on the receiving end of a face-to-face pitch from a Tech House member that described the event. This drove some design decisions: the overall goal of the flyer was to remind the recipient of the conversation, not introduce it anew. I also wanted to include a large version of our cool logo and give them the means to find the building. <br />Lesson learned: find out if your materials are going to be viewed in low-light situations and increase the content size or paper size accordingly.</description>
+		<src>stuffnight2.jpg</src>
+	</piece>
+	<piece>
+		<title>Stuff Night 2</title>
+		<client>Tech House</client>
+		<medium>Tableslip</medium>
+		<year>2009</year>
+		<description>This series of tableslip designs continued the polished, sophisticated design theme for Tech House publications. Column layouts are great, and this one works well with elegant serif type and the flourish for balance. This tableslip was the first design to include double-sided printing, which gave the front more room without a map wedged into a corner, and the back had a large, gorgeous map with destination callout. The inclusion of a readable, helpful map was important because publication corresponded to the first public event of the school year, so the target audience was the new student that didn't know where Tech House was located. A new challenge involved letting the audience know that there was a back side to the printing. To do so, I included the notice in the lower right area, in case the tableslip landed face-up, and used light background colors on the front so the high-contrast map would show through given the slightest bit of backlight when the slip is lifted from the table.</description>
+		<src>stuffnight3.jpg</src>
+	</piece>
+	<piece>
+		<title>Techo Dance</title>
+		<client>Tech House</client>
+		<medium>Tableslip</medium>
+		<year>2009</year>
+		<description>Series of tableslips advertising a party I was DJing. The font I chose is really groovy and Unicode-tastic, the background is pretty high-energy, and the silhouettes are excited and good-looking. It's a shame that we didn't have color printing available, because the background started out as a hot red blast.</description>
+		<src>technodance.jpg</src>
+	</piece>
+	<piece>
+		<title>April Fools' Day</title>
+		<client>Tech House</client>
+		<medium>Web site</medium>
+		<year>2009</year>
+		<description>Tech House turned into a Host Club on April 1, offering the noble services of various members for the sophisticated pleasure of the discerning bachelor or débutante. This was a group project that unfolded in a few short hours inside Tech House Black Ops, right up against the deadline. The site consisted of twenty-three pages, but cunning use of PHP, CSS, XML and XSLT made short work of this challenge.</description>
+		<src>aprilfools09.jpg</src>
+	</piece>
+	<piece>
+		<title>Crest</title>
+		<client>Tech House</client>
+		<medium>Shirt</medium>
+		<year>2008</year>
+		<description>I combined the trusty old circular Tech House logo with a medieval coat-of-arms motif, complete with satellite dish, for the annual t-shirt design competition. Mine was a smashing hit and I see people wearing these t-shirts and hoodies all the time.</description>
+		<src>crest.jpg</src>
+	</piece>
+	<piece>
+		<title>Eastec</title>
+		<client>New Visions Engineering</client>
+		<medium>Poster</medium>
+		<year>2006</year>
+		<description>A group project for a high school engineering course. Our class attended a trade show that included a student poster contest. Our entry, a 4' × 3' poster I created in Illustrator and Photoshop, showcased the different local companies we had taken tours of.</description>
+		<src>eastec.jpg</src>
+	</piece>
+	<piece>
+		<title>Mothers' Day</title>
+		<client>Mrs. Hutchison</client>
+		<medium>Card</medium>
+		<year>2008</year>
+		<description>Any self-respecting designer should create his own Mothers' Day card.</description>
+		<src>mothersday2008.jpg</src>
+	</piece>
+	<piece>
+		<title>Photo Gallery</title>
+		<client>Tech House</client>
+		<medium>Web application</medium>
+		<year>2008</year>
+		<description>Tech House's old photo gallery was a mess of Perl and slower than slow. I rewrote it, maintaining backwards compatibility but including faster page loads, a thumbnail index page, keyboard navigation, a thumbnail frame inside galleries, better metadata display, and a web-based gallery publishing tool.</description>
+		<src>photogallery1.jpg</src>
+	</piece>
+	<piece>
+		<title>Quotes Page</title>
+		<client>Tech House</client>
+		<medium>Web application</medium>
+		<year>2009</year>
+		<description>Features voting, AJAX, XML storage, RSS feed, web and command-line interfaces, and easy year-to-year migration. Progressively enhanced, of course.</description>
+		<src>quotes.jpg</src>
+	</piece>
+	<piece>
+		<title>Swiss Army Tech House</title>
+		<client>Tech House</client>
+		<medium>Shirt</medium>
+		<year>2009</year>
+		<description>My second submission to the annual t-shirt design competition. This entry tied for first and was adopted for use in many subsequent Tech House publications.</description>
+		<src>swissarmyknife.jpg</src>
+	</piece>
+	<piece>
+		<title>Uploader</title>
+		<client>Personal</client>
+		<medium>Web application</medium>
+		<year>2005</year>
+		<description>My first web application, where I learned about PHP, file uploads, access control, pre-AJAX Javascript integration, and usability.</description>
+		<src>Uploader.png</src>
+	</piece>
+</portfolio>
