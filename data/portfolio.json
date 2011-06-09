@@ -1,265 +1,270 @@
-{
-	"identifier":  "id",
-
-	"label":  "title",
-
-	"items": [
-		{
-			"id": "cheese_night",
-			"title": "Cheese Night",
-			"client": "Tech House",
-			"medium": "tableslip",
-			"year": "2009",
-			"description": "I wanted to create a more classical look, but not to overdo it with flashy fonts and flourishes. The spatial balance, typography, and clean simplicity reflected the attitude of the event: refined and distinguished.",
-			"src": "cheesenight.jpg"
-		},
-		{
-			"id": "euro_dance",
-			"title": "Euro Dance",
-			"client": "Tech House",
-			"medium": "tableslip",
-			"year": "2009",
-			"description": "As an advertisement for a dance party, this design aimed to be effective by showing an exciting scene. The silhouettes were chosen to look joyful and energetic. Below, the details are presented in an ornate style to give the design a unique style.",
-			"src": "eurodance.jpg"
-		},
-		{
-			"id": "firecream",
-			"title": "Firecream",
-			"client": "Tech House",
-			"medium": "tableslip",
-			"year": "2009",
-			"description": "One challenge faced in this design was the name of the event. House members all know what Firecream is, but it makes no sense for everyone else. I decided to describe the event so that people could understand what happened and minimize the fact that it had a silly name. \"Ice Cream, Beside a roaring fireplace\" is more attractive and makes more sense.",
-			"src": "firecream.jpg"
-		},
-		{
-			"id": "helium_party",
-			"title": "Helium Party",
-			"client": "Tech House",
-			"medium": "tableslip",
-			"year": "2008",
-			"description": "The first thing that came to mind was to create a design with helium balloons. The second idea was to have content that looked nothing like helium, but was funny, a little puzzling, related to the idea of floating, and (most of all) memorable.",
-			"src": "heliumparty.jpg"
-		},
-		{
-			"id": "javaspook_2008",
-			"title": "Javaspook 2008",
-			"client": "Tech House",
-			"medium": "tableslip",
-			"year": "2008",
-			"description": "This design continued in the proud, slick-looking Tech House tradition of tableslips with lots of black ink. They tend to stand out well when they are deployed. The high-contrast moon and large white text stand out from the dark background.",
-			"src": "javaspook2008.jpg"
-		},
-		{
-			"id": "javaspook_2009",
-			"title": "Javaspook 2009",
-			"client": "Tech House",
-			"medium": "tableslip",
-			"year": "2009",
-			"description": "The main focus of this design is the grid of six items in the center, representing the major selling points of this event. The content of each cell was chosen to be easy to recognize, obvious in meaning, and dark enough to starkly stand out against the light background.",
-			"src": "javaspook2009.jpg"
-		},
-		{
-			"id": "mafia",
-			"title": "Mafia",
-			"client": "Tech House",
-			"medium": "tableslip",
-			"year": "2009",
-			"description": "A game like Mafia calls for a dark tableslip design with grunge fonts, a dirty background texture, and gentlemen in suits. A little bit of Fake Italiano never hurts, either.",
-			"src": "mafia.jpg"
-		},
-		{
-			"id": "apples_to_apples",
-			"title": "Apples to Apples",
-			"client": "Tech House",
-			"medium": "tableslip",
-			"year": "2008",
-			"description": "An orange makes a prominent appearance in this design because orange slices were served during the game, and the event was almost called Oranges to Oranges. I am very happy with this design. The lady is excited, and human faces draw the viewer's attention like a magnet, especially when the faces are looking at important information. Second, the text on a slant looks very spiffy. Slab serif seals the deal.",
-			"src": "apples.jpg"
-		},
-		{
-			"id": "spam_poetry",
-			"title": "Spam Poetry",
-			"client": "Tech House",
-			"medium": "tableslip",
-			"year": "2009",
-			"description": "Using 3D techniques to make the text look more like it physically exists in the scene. The source image captured the heart of the event's experience quite well.",
-			"src": "spampoetry.jpg"
-		},
-		{
-			"id": "stuff_night_adoch",
-			"title": "Stuff Night for A Day on College Hill",
-			"client": "Tech House",
-			"medium": "flyer",
-			"year": "2009",
-			"description": "Unlike many other Tech House publications, this design was whipped up to be passed around in the evening during A Day on College Hill. Prospective freshmen were welcomed to attend our Stuff Night, so the target audience was a 17-year-old who may not even know about Tech House, but was making plans for that evening. Also, the viewer would be on the receiving end of a face-to-face pitch from a Tech House member that described the event. This drove some design decisions:  the overall goal of the flyer was to remind the recipient of the conversation, not introduce it anew. I also wanted to include a large version of our cool logo and give them the means to find the building. Lesson learned:  find out if your materials are going to be viewed in low-light situations and increase the content size or paper size accordingly.",
-			"src": "stuffnight2.jpg"
-		},
-		{
-			"id": "stuff_night",
-			"title": "Stuff Night",
-			"client": "Tech House",
-			"medium": "tableslip",
-			"year": "2009",
-			"description": "This series of tableslip designs continued the polished, sophisticated design theme for Tech House publications. Column layouts are great, and this one works well with elegant serif type and the flourish for balance. This tableslip was the first design to include double-sided printing, which gave the front more room without a map wedged into a corner, and the back had a large, gorgeous map with destination callout. The inclusion of a readable, helpful map was important because publication corresponded to the first public event of the school year, so the target audience was the new student that didn't know where Tech House was located. A new challenge involved letting the audience know that there was a back side to the printing. To do so, I included the notice in the lower right area, in case the tableslip landed face-up, and used light background colors on the front so the high-contrast map would show through given the slightest bit of backlight when the slip is lifted from the table.",
-			"src": "stuffnight3.jpg"
-		},
-		{
-			"id": "techno_dance",
-			"title": "Techo Dance",
-			"client": "Tech House",
-			"medium": "tableslip",
-			"year": "2009",
-			"description": "Series of tableslips advertising a party I was DJing. The font I chose is really groovy and Unicode-tastic, the background is pretty high-energy, and the silhouettes are excited and good-looking. It's a shame that we didn't have color printing available, because the background started out as a hot red blast.",
-			"src": "technodance.jpg"
-		},
-		{
-			"id": "april_fools_2009",
-			"title": "April Fools' Day",
-			"client": "Tech House",
-			"medium": "web site",
-			"year": "2009",
-			"description": "Tech House turned into a Host Club on April 1, offering the noble services of various members for the sophisticated pleasure of the discerning bachelor or d\u00e9butante. This was a group project that unfolded in a few short hours inside Tech House Black Ops, right up against the deadline. The site consisted of twenty-three pages, but cunning use of PHP, CSS, XML and XSLT made short work of this challenge.",
-			"src": "aprilfools09.jpg"
-		},
-		{
-			"id": "crest",
-			"title": "Crest",
-			"client": "Tech House",
-			"medium": "shirt",
-			"year": "2008",
-			"description": "I combined the trusty old circular Tech House logo with a medieval coat-of-arms motif, complete with satellite dish, for the annual t-shirt design competition. Mine was a smashing hit and I see people wearing these t-shirts and hoodies all the time.",
-			"src": "crest.jpg"
-		},
-		{
-			"id": "eastec",
-			"title": "Eastec",
-			"client": "New Visions Engineering",
-			"medium": "poster",
-			"year": "2006",
-			"description": "A group project for a high school engineering course. Our class attended a trade show that included a student poster contest. Our entry, a 4' \u00d7 3' poster I created in Illustrator and Photoshop, showcased the different local companies we had taken tours of.",
-			"src": "eastec.jpg"
-		},
-		{
-			"id": "mothers_day_2008",
-			"title": "Mothers' Day",
-			"client": "Mrs. Hutchison",
-			"medium": "card",
-			"year": "2008",
-			"description": "Any self-respecting designer should create his own Mothers' Day card.",
-			"src": "mothersday2008.jpg"
-		},
-		{
-			"id": "photography_mk2",
-			"title": "Tech House Photography Mk.II",
-			"client": "Tech House",
-			"medium": "web application",
-			"year": "2008",
-			"description": "Tech House's old photo gallery was a mess of Perl and slower than slow. I rewrote it, maintaining backwards compatibility but including faster page loads, a thumbnail index page, keyboard navigation, a thumbnail frame inside galleries, better metadata display, and a web-based gallery publishing tool.",
-			"src": "photogallery1.jpg"
-		},
-		{
-			"id": "quotes",
-			"title": "Quotes Page",
-			"client": "Tech House",
-			"medium": "web application",
-			"year": "2009",
-			"description": "Features voting, AJAX, XML storage, RSS feed, web and command-line interfaces, and easy year-to-year migration. Progressively enhanced, of course.",
-			"src": "quotes.jpg"
-		},
-		{
-			"id": "swiss_army_knife",
-			"title": "Swiss Army Tech House",
-			"client": "Tech House",
-			"medium": "shirt",
-			"year": "2009",
-			"description": "My second submission to the annual t-shirt design competition. This entry tied for first and was adopted for use in many subsequent Tech House publications.",
-			"src": "swissarmyknife.jpg"
-		},
-		{
-			"id": "uploader",
-			"title": "Uploader",
-			"client": "Personal",
-			"medium": "web application",
-			"year": "2005",
-			"description": "My first web application, where I learned about PHP, file uploads, access control, pre-AJAX Javascript integration, and usability.",
-			"src": "Uploader.png"
-		},
-		{
-			"id": "thlaundry",
-			"title": "THLaundry",
-			"client": "Tech House",
-			"medium": "web site",
-			"year": "2010"
-		},
-		{
-			"id": "photography_mk3",
-			"title": "Tech House Photography Mk.III",
-			"client": "Tech House",
-			"medium": "web application",
-			"year": "2010"
-		},
-		{
-			"id": "apparel",
-			"title": "Tech House Apparel",
-			"client": "Tech House",
-			"medium": "web application",
-			"year": "2011"
-		},
-		{
-			"id": "autorpg",
-			"title": "AutoRPG",
-			"client": "Personal",
-			"medium": "web application",
-			"year": "2010"
-		},
-		{
-			"id": "recruiting_flyer",
-			"title": "Cisco Recruiting Flyer",
-			"client": "Cisco Systems",
-			"medium": "flyer",
-			"year": "2010"
-		},
-		{
-			"id": "coal_powered_websites",
-			"title": "Coal-Powered Websites",
-			"client": "Cisco Systems",
-			"medium": "flyer",
-			"year": "2011"
-		},
-		{
-			"id": "star_city",
-			"title": "Star City",
-			"client": "Russian 1200, Brown University",
-			"medium": "web site",
-			"year": "2010"
-		},
-		{
-			"id": "map",
-			"title": "Tech House Map",
-			"client": "Literary Arts 1010D, Brown University",
-			"medium": "web application",
-			"year": "2009"
-		},
-		{
-			"id": "panoramas",
-			"title": "Panoramas",
-			"client": "Literary Arts 1110C, Brown University",
-			"medium": "3D virtual reality simulation",
-			"year": "2007"
-		},
-		{
-			"id": "campus_safety_map",
-			"title": "Campus Safety Map",
-			"client": "Geology 1320, Brown University",
-			"medium": "poster",
-			"year": "2007"
-		},
-		{
-			"id": "stereoscopic",
-			"title": "Stereoscopic Images",
-			"client": "Cognitive Science 0110, Brown University",
-			"medium": "web site",
-			"year": "2008"
-		}
-	]
-}
+[
+	{
+		"id": "cheese_night",
+		"title": "Cheese Night",
+		"client": "Technology House",
+		"medium": "tableslip",
+		"year": "2009",
+		"description": "I wanted to create a more classical look, but not to overdo it with flashy fonts and flourishes. The spatial balance, typography, and clean simplicity reflected the attitude of the event: refined and distinguished.",
+		"src": "cheesenight.jpg"
+	},
+	{
+		"id": "euro_dance",
+		"title": "Euro Dance",
+		"client": "Technology House",
+		"medium": "tableslip",
+		"year": "2009",
+		"description": "As an advertisement for a dance party, this design aimed to be effective by showing an exciting scene. The silhouettes were chosen to look joyful and energetic. Below, the details are presented in an ornate style to give the design a unique style.",
+		"src": "eurodance.jpg"
+	},
+	{
+		"id": "firecream",
+		"title": "Firecream",
+		"client": "Technology House",
+		"medium": "tableslip",
+		"year": "2009",
+		"description": "One challenge faced in this design was the name of the event. House members all know what Firecream is, but it makes no sense for everyone else. I decided to describe the event so that people could understand what happened and minimize the fact that it had a silly name. \"Ice Cream, Beside a roaring fireplace\" is more attractive and makes more sense.",
+		"src": "firecream.jpg"
+	},
+	{
+		"id": "helium_party",
+		"title": "Helium Party",
+		"client": "Technology House",
+		"medium": "tableslip",
+		"year": "2008",
+		"description": "The first thing that came to mind was to create a design with helium balloons. The second idea was to have content that looked nothing like helium, but was funny, a little puzzling, related to the idea of floating, and (most of all) memorable.",
+		"src": "heliumparty.jpg"
+	},
+	{
+		"id": "javaspook_2008",
+		"title": "Javaspook 2008",
+		"client": "Technology House",
+		"medium": "tableslip",
+		"year": "2008",
+		"description": "This design continued in the proud, slick-looking Tech House tradition of tableslips with lots of black ink. They tend to stand out well when they are deployed. The high-contrast moon and large white text stand out from the dark background.",
+		"src": "javaspook2008.jpg"
+	},
+	{
+		"id": "javaspook_2009",
+		"title": "Javaspook 2009",
+		"client": "Technology House",
+		"medium": "tableslip",
+		"year": "2009",
+		"description": "The main focus of this design is the grid of six items in the center, representing the major selling points of this event. The content of each cell was chosen to be easy to recognize, obvious in meaning, and dark enough to starkly stand out against the light background.",
+		"src": "javaspook2009.jpg"
+	},
+	{
+		"id": "mafia",
+		"title": "Mafia",
+		"client": "Technology House",
+		"medium": "tableslip",
+		"year": "2009",
+		"description": "A game like Mafia calls for a dark tableslip design with grunge fonts, a dirty background texture, and gentlemen in suits. A little bit of Fake Italiano never hurts, either.",
+		"src": "mafia.jpg"
+	},
+	{
+		"id": "apples_to_apples",
+		"title": "Apples to Apples",
+		"client": "Technology House",
+		"medium": "tableslip",
+		"year": "2008",
+		"description": "An orange makes a prominent appearance in this design because orange slices were served during the game, and the event was almost called Oranges to Oranges. I am very happy with this design. The lady is excited, and human faces draw the viewer's attention like a magnet, especially when the faces are looking at important information. Second, the text on a slant looks very spiffy. Slab serif seals the deal.",
+		"src": "apples.jpg"
+	},
+	{
+		"id": "spam_poetry",
+		"title": "Spam Poetry",
+		"client": "Technology House",
+		"medium": "tableslip",
+		"year": "2009",
+		"description": "Using 3D techniques to make the text look more like it physically exists in the scene. The source image captured the heart of the event's experience quite well.",
+		"src": "spampoetry.jpg"
+	},
+	{
+		"id": "stuff_night_adoch",
+		"title": "Stuff Night for A Day on College Hill",
+		"client": "Technology House",
+		"medium": "flyer",
+		"year": "2009",
+		"description": "Unlike many other Tech House publications, this design was whipped up to be passed around in the evening during A Day on College Hill. Prospective freshmen were welcomed to attend our Stuff Night, so the target audience was a 17-year-old who may not even know about Tech House, but was making plans for that evening. Also, the viewer would be on the receiving end of a face-to-face pitch from a Tech House member that described the event. This drove some design decisions:  the overall goal of the flyer was to remind the recipient of the conversation, not introduce it anew. I also wanted to include a large version of our cool logo and give them the means to find the building. Lesson learned:  find out if your materials are going to be viewed in low-light situations and increase the content size or paper size accordingly.",
+		"src": "stuffnight2.jpg"
+	},
+	{
+		"id": "stuff_night",
+		"title": "Stuff Night",
+		"client": "Technology House",
+		"medium": "tableslip",
+		"year": "2009",
+		"description": "This series of tableslip designs continued the polished, sophisticated design theme for Tech House publications. Column layouts are great, and this one works well with elegant serif type and the flourish for balance. This tableslip was the first design to include double-sided printing, which gave the front more room without a map wedged into a corner, and the back had a large, gorgeous map with destination callout. The inclusion of a readable, helpful map was important because publication corresponded to the first public event of the school year, so the target audience was the new student that didn't know where Tech House was located. A new challenge involved letting the audience know that there was a back side to the printing. To do so, I included the notice in the lower right area, in case the tableslip landed face-up, and used light background colors on the front so the high-contrast map would show through given the slightest bit of backlight when the slip is lifted from the table.",
+		"src": "stuffnight3.jpg"
+	},
+	{
+		"id": "techno_dance",
+		"title": "Techo Dance",
+		"client": "Technology House",
+		"medium": "tableslip",
+		"year": "2009",
+		"description": "Series of tableslips advertising a party I was DJing. The font I chose is really groovy and Unicode-tastic, the background is pretty high-energy, and the silhouettes are excited and good-looking. It's a shame that we didn't have color printing available, because the background started out as a hot red blast.",
+		"src": "technodance.jpg"
+	},
+	{
+		"id": "april_fools_2009",
+		"title": "April Fools' Day",
+		"client": "Technology House",
+		"medium": "web site",
+		"year": "2009",
+		"description": "Tech House turned into a Host Club on April 1, offering the noble services of various members for the sophisticated pleasure of the discerning bachelor or d\u00e9butante. This was a group project that unfolded in a few short hours inside Tech House Black Ops, right up against the deadline. The site consisted of twenty-three pages, but cunning use of PHP, CSS, XML and XSLT made short work of this challenge.",
+		"src": "aprilfools09.jpg"
+	},
+	{
+		"id": "crest",
+		"title": "Crest",
+		"client": "Technology House",
+		"medium": "shirt",
+		"year": "2008",
+		"description": "I combined the trusty old circular Tech House logo with a medieval coat-of-arms motif, complete with satellite dish, for the annual t-shirt design competition. Mine was a smashing hit and I see people wearing these t-shirts and hoodies all the time.",
+		"src": "crest.jpg"
+	},
+	{
+		"id": "eastec",
+		"title": "Eastec",
+		"client": "New Visions Engineering",
+		"medium": "poster",
+		"year": "2006",
+		"description": "A group project for a high school engineering course. Our class attended a trade show that included a student poster contest. Our entry, a 4' \u00d7 3' poster I created in Illustrator and Photoshop, showcased the different local companies we had taken tours of.",
+		"src": "eastec.jpg"
+	},
+	{
+		"id": "mothers_day_2008",
+		"title": "Mothers' Day",
+		"client": "Mrs. Hutchison",
+		"medium": "card",
+		"year": "2008",
+		"description": "Any self-respecting designer should create his own Mothers' Day card.",
+		"src": "mothersday2008.jpg"
+	},
+	{
+		"id": "photography_mk2",
+		"title": "Tech House Photography Mk.II",
+		"client": "Technology House",
+		"medium": "web application",
+		"year": "2008",
+		"description": "Tech House's old photo gallery was a mess of Perl and slower than slow. I rewrote it, maintaining backwards compatibility but including faster page loads, a thumbnail index page, keyboard navigation, a thumbnail frame inside galleries, better metadata display, and a web-based gallery publishing tool.",
+		"src": "photogallery1.jpg"
+	},
+	{
+		"id": "quotes",
+		"title": "Quotes Page",
+		"client": "Technology House",
+		"medium": "web application",
+		"year": "2009",
+		"description": "Features voting, AJAX, XML storage, RSS feed, web and command-line interfaces, and easy year-to-year migration. Progressively enhanced, of course.",
+		"src": "quotes.jpg"
+	},
+	{
+		"id": "swiss_army_knife",
+		"title": "Swiss Army Tech House",
+		"client": "Technology House",
+		"medium": "shirt",
+		"year": "2009",
+		"description": "My second submission to the annual t-shirt design competition. This entry tied for first and was adopted for use in many subsequent Tech House publications.",
+		"src": "swissarmyknife.jpg"
+	},
+	{
+		"id": "uploader",
+		"title": "Uploader",
+		"client": "personal use",
+		"medium": "web application",
+		"year": "2005",
+		"description": "My first web application, where I learned about PHP, file uploads, access control, pre-AJAX Javascript integration, and usability.",
+		"src": "Uploader.png"
+	},
+	{
+		"id": "thlaundry",
+		"title": "THLaundry",
+		"client": "Technology House",
+		"medium": "web site",
+		"year": "2010",
+		"src": "thlaundry.jpg"
+	},
+	{
+		"id": "photography_mk3",
+		"title": "Tech House Photography Mk.III",
+		"client": "Technology House",
+		"medium": "web application",
+		"year": "2010",
+		"src": "techhousephotography.jpg"
+	},
+	{
+		"id": "apparel",
+		"title": "Tech House Apparel",
+		"client": "Technology House",
+		"medium": "web application",
+		"year": "2011",
+		"src": "thapparel.jpg"
+	},
+	{
+		"id": "autorpg",
+		"title": "AutoRPG",
+		"client": "personal use",
+		"medium": "web application",
+		"year": "2010",
+		"src": "autorpg.jpg"
+	},
+	{
+		"id": "recruiting_flyer",
+		"title": "Cisco Recruiting Flyer",
+		"client": "Cisco Systems",
+		"medium": "flyer",
+		"year": "2010",
+		"src": "ciscorecruiting.jpg"
+	},
+	{
+		"id": "coal_powered_websites",
+		"title": "Coal-Powered Industrial Websites",
+		"client": "Cisco Systems",
+		"medium": "flyer",
+		"year": "2011",
+		"src": "coalpoweredwebsites.jpg"
+	},
+	{
+		"id": "star_city",
+		"title": "Star City",
+		"client": "Russian 1200 at Brown University",
+		"medium": "web site",
+		"year": "2010",
+		"src": "starcity.jpg"
+	},
+	{
+		"id": "map",
+		"title": "Tech House Map",
+		"client": "Literary Arts 1010D at Brown University",
+		"medium": "web application",
+		"year": "2009",
+		"src": "techhousemap.jpg"
+	},
+	{
+		"id": "panoramas",
+		"title": "Panoramas",
+		"client": "Literary Arts 1110C at Brown University",
+		"medium": "3D virtual reality simulation",
+		"year": "2007",
+		"src": "panoramas.jpg"
+	},
+	{
+		"id": "campus_safety_map",
+		"title": "Campus Safety Map",
+		"client": "Geology 1320 at Brown University",
+		"medium": "poster",
+		"year": "2007",
+		"src": "campussafetymap.jpg"
+	},
+	{
+		"id": "stereoscopic",
+		"title": "Stereoscopic Images",
+		"client": "Cognitive Science 0110 at Brown University",
+		"medium": "web site",
+		"year": "2008",
+		"src": "stereoscopic.jpg"
+	}
+]

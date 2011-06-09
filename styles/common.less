@@ -1,16 +1,62 @@
+/* Fonts */
+@import "type/typefaces.css";
+
+/* Default Values */
+@default_color: white;
+@default_shadow_color: rgba(0, 0, 0, 0.40);
+
+/* Default Styles*/
+body {
+	color: @default_color;
+	width: 100%;
+	min-height: 100%;
+	background-color: #060403;
+	font-size: 80%;
+}
+
+a {
+	color: @default_color;
+	text-decoration: none;
+
+	&:hover {
+		color: black !important;
+		text-shadow: none;
+
+		img {
+			border-color: black !important;
+			box-shadow: none !important;
+		}
+	}
+}
+
+/* Functions */
 .background-size(@size){
 	background-size: @size;
 	-wekbit-background-size: @size;
-	-moz-background-size: @size;
 }
 
 .border-radius(@radius){
-    border-radius: @radius;
-//    -moz-border-radius: @radius;
-    /*-webkit-border-radius: 3px;*/
+	border-radius: @radius;
+	/*-webkit-border-radius: 3px;*/
 }
 
 .box-shadow(@x, @y, @radius, @color){
-    box-shadow: @x @y @radius @color;
-    
+	box-shadow: @x @y @radius @color;
+}
+
+.wood-background {
+	background-image: url('../images/wood.jpg');
+	background-repeat: no-repeat;
+	.background-size(cover);
+}
+
+.box-sizing(@model) {
+	box-sizing: @model;
+	-moz-box-sizing: @model;
+	-webkit-box-sizing: @model;
+}
+
+.logo() {
+    text-indent: -9999px;
+    display: inline-block;
 }

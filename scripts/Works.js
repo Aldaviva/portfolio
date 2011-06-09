@@ -1,98 +1,111 @@
-dojo.provide("portfolio.Works");
+window.Works = function(){
 
-dojo.require("dojo.hash");
-dojo.require("dojo.parser");
-dojo.require("dojo.data.ItemFileReadStore");
-// dojo.require("dojox.data.XmlStore");
-dojo.require("dojox.dtl.DomInline");
+	_.extend(this, Backbone.Events);
 
-dojo.declare("Works", null, {
-	attributes: ['title', 'year', 'client', 'medium', 'description', 'src'],
-	defaultSort: [{attribute: "year", descending: true}, {attribute: "title", descending: false}],
+	this.models = {
+		Piece: Backbone.Model.extend({
+			defaults: {
+				selected: false
+			}
+		})
+	};
 
-	constructor: function(){
-		this.setUpDataStore();
+	this.views = {
+		ListItemPanel: Backbone.View.extend({
+			tagName: "li",
+			initialize: function(options){
+				_.bindAll(this, "render");
+				this.model.bind('change', this.render);
+			},
+			render: function(){
+				$(this.el).html(this.template(this.model.toJSON()));
+				this.$('.year').toggle(this.options.showYear);
+				$(this.el).toggleClass("selected", this.model.get("selected"));
+				return this;
+			}
+		}),
+		SelectedItemPanel: Backbone.View.extend({
+			render: function(){
+				$(this.el).html(this.template(this.model.toJSON()));
 
-		dojo.addOnLoad(this, this.setUpList);
-		dojo.addOnLoad(this, this.setUpSelectedPane);
-	},
+				var previouslySelected = this.model.collection.find(function(item){
+					return item.get("selected");
+				});
+				if(previouslySelected){
+					previouslySelected.set({selected: false});
+				}
+				this.model.set({selected: true});
+				
+				return this;
+			}
+		})
+	};
 
-	setUpDataStore: function(){
-		this.store = new dojo.data.ItemFileReadStore({
-			url: 'data/portfolio.json'
-		});
-	},
+	this.initialize = function(){
+		this.setUpTemplates();
 
-	setUpList: function(){
-		this.listPiecesByYearDesc().then(function(items){
-			var listRepeater = dijit.byId("listRepeater");
-			listRepeater.context = {items: items};
-			listRepeater.render();
-		});
-	},
-
-	setUpSelectedPane: function(){
-		if(dojo.hash() == ""){
-			this.findMostRecentPiece().then(dojo.hitch(this, function(mostRecentPiece){
-				this.swapSelectedPaneContextToPiece(mostRecentPiece);
-			}));
-		} else {
-			this.swapSelectedPaneContextByHashId();
+		var pieces = this.pieces = new Backbone.Collection();
+		pieces.url = 'data/portfolio.json';
+		pieces.model = this.models.Piece;
+		pieces.comparator = function(piece){
+			return -1 * piece.get("year")
 		}
 
-		dojo.subscribe("/dojo/hashchange", this, this.swapSelectedPaneContextByHashId);
-	},
+		pieces.bind('refresh', _.bind(function(){
+			this.setUpList();
+			this.setUpSelectedItem();
+			this.setUpController();
+			this.trigger('refresh');
+		}, this));
 
-	swapSelectedPaneContextToPiece: function(selectedPiece){
-		var selectedPane = dijit.byId("selectedPane");
-		selectedPane.context = {item: selectedPiece};
-		selectedPane.render();
-	},
+		pieces.fetch();
+	};
 
-	swapSelectedPaneContextByHashId: function(){
-		this.store.fetchItemByIdentity({
-			identity: dojo.hash(), 
-			onItem: this.swapSelectedPaneContextToPiece,
-			onError: alert
+	this.setUpList = function(){
+		var listPane = $('#listPane');
+		var lastYear;
+		this.pieces.each(function(item){
+			var view = new this.views.ListItemPanel({
+				model: item,
+				showYear: item.get("year") != lastYear,
+				id: "listItem-" + item.id
+			});
+			listPane.append(view.render().el);
+			lastYear = item.get("year");
+		}, this);
+	};
+
+	this.setUpSelectedItem = function(){
+		var selectedItemPane = $('#selectedItemPane');
+		var item = this.pieces.first();
+		this.selectedItemView = new this.views.SelectedItemPanel({
+			model: item
 		});
-	},
+		selectedItemPane.empty().append(this.selectedItemView.render().el);
+	};
 
-	listPiecesByYearDesc: function(){
-		var deferred = new dojo.Deferred();
-		this.store.fetch({
-			sort: this.defaultSort,
-			scope: this,
-			onComplete: function(results){
-				//var fullItems = this.getValuesForFetchedItems(this.store, this.attributes, results);
-				deferred.callback(results);
-			},
-			onError: function(error, request){
-				console.error("error: "+error+", request: "+request);
+	this.setUpController = function(){
+		this.controller = new Backbone.Controller();
+		
+		this.controller.route(":pieceId", "changeSelectedPiece", _.bind(function(pieceId){
+			var piece = this.pieces.get(pieceId);
+			if(typeof piece != "undefined"){
+				this.selectedItemView.model = piece;
 			}
-		});
-		return deferred;
-	},
+			this.selectedItemView.render();
+		}, this));
 
-	findMostRecentPiece: function(){
-		var deferred = new dojo.Deferred();
-		this.store.fetch({
-			sort: this.defaultSort,
-			count: 1,
-			scope: this,
-			onComplete: function(results){
-				deferred.callback(results[0]);
-			}
-		});
-		return deferred;
+		Backbone.history.start();
+	};
+
+	this.setUpTemplates = function(){
+		this.views.ListItemPanel.prototype.template = generateAndHideTemplate('listItemTemplate');
+		this.views.SelectedItemPanel.prototype.template = generateAndHideTemplate('selectedItemTemplate');
+	};
+
+	function generateAndHideTemplate(id){
+		return _.template(decodeURIComponent($('#'+id).remove().html()));
 	}
 
-	/*getValuesForFetchedItems: function(store, attributes, items){
-		return dojo.map(items, dojo.hitch(this, function(item){
-			var fullItem = new Object();
-			dojo.forEach(attributes, function(attr){
-				fullItem[attr] = store.getValue(item, attr).element.textContent;
-			});
-			return fullItem;
-		}));
-	}*/
-});
+	this.initialize();
+};

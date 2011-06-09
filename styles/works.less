@@ -1,0 +1,106 @@
+@import "common.less";
+
+body {
+	position: absolute;
+}
+
+#works {
+	
+	.pane_background{
+		background-color: hsla(0, 0%, 0%, 0.88);
+	}
+		
+	overflow-x: hidden;
+	overflow-y: auto;
+
+	header {
+		height: 102px;
+		.wood-background();
+		background-position: 0 87%;
+		box-shadow: inset 0 -4px 8px black;
+		.box-sizing(border-box);
+		padding: 25px 0 0 29px;
+
+		h1 {
+			.logo();
+			width: 309px;
+			height: 34px;
+			background: url('../images/title_medium.png') no-repeat;
+		}
+	}
+
+	#selectedItemPane {
+		padding-top: 17px;
+		padding-bottom: 185px;
+
+		> div {
+			text-align: center;
+
+			.note {
+				position: fixed;
+				width: 100%;
+				bottom: 150px;
+				margin: 8px auto 0;
+				color: hsl(0, 0%, 67%);
+				font: 13px "AvantGarde";
+				span {
+					.pane_background();
+					padding: 8px 11px 6px;
+					line-height: 17px;
+					.border-radius(4px);
+				}
+
+				em {
+					color: @default_color;
+					font-style: normal;
+				}
+			}
+		}
+	}
+
+	#listPane {
+		position: fixed;
+		bottom: 0;
+		overflow-x: auto;
+		overflow-y: hidden;
+		//left: 17px;
+		//right: 17px;
+		left: 0;
+		right: 0;
+		white-space: nowrap;
+		padding-bottom: 17px;
+		border-top: 1px solid hsl(0, 0%, 17%);
+		.pane_background();
+
+		li {
+			vertical-align: top;
+			display: inline-block;
+			position: relative;
+			padding-top: 27px;
+			margin-right: 17px;
+			border-top: 2px solid transparent;
+
+			.year {
+				position: absolute;
+				top: 8px;
+				font-weight: bold;
+				font-size: 9px;
+				color: hsl(0, 0%, 50%);
+				font-family: 'Futura';
+				font-weight: bold;
+			}
+
+			&:first-child {
+				margin-left: 17px;
+			}
+
+			&.selected {
+				border-top-color: hsla(0, 0, 100%, 0.75);
+			}
+
+			&:hover:not(.selected) {
+				border-top-color: hsla(0, 0, 100%, 0.35);
+			}
+		}
+	}
+}

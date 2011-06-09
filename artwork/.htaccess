@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteBase /artwork/
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(\d+)x(\d+)/(.*)$ thumbnail.php?filename=$3&width=$1&height=$2
