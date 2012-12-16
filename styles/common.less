@@ -1,5 +1,5 @@
 /* Fonts */
-@import "type/typefaces.css";
+@import "typefaces";
 
 /* Default Values */
 @default_color: white;
@@ -12,6 +12,7 @@ body {
 	min-height: 100%;
 	background-color: #060403;
 	font-size: 80%;
+	position: absolute;
 }
 
 a {
@@ -32,12 +33,11 @@ a {
 /* Functions */
 .background-size(@size){
 	background-size: @size;
-	-wekbit-background-size: @size;
+	-webkit-background-size: @size;
 }
 
 .border-radius(@radius){
 	border-radius: @radius;
-	/*-webkit-border-radius: 3px;*/
 }
 
 .box-shadow(@x, @y, @radius, @color){

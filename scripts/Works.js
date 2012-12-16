@@ -5,28 +5,38 @@ window.Works = function(){
 	this.models = {
 		Piece: Backbone.Model.extend({
 			defaults: {
-				selected: false
+				selected: false,
+				index: -1
 			}
 		})
 	};
 
 	this.views = {
-		ListItemPanel: Backbone.View.extend({
+		listPanel: Backbone.View.extend({
 			tagName: "li",
 			initialize: function(options){
 				_.bindAll(this, "render");
 				this.model.bind('change', this.render);
 			},
+		    events: {
+			'click .thumb': 'onThumbClick'
+		    },
 			render: function(){
 				$(this.el).html(this.template(this.model.toJSON()));
 				this.$('.year').toggle(this.options.showYear);
 				$(this.el).toggleClass("selected", this.model.get("selected"));
 				return this;
-			}
+			},
+		    onThumbClick: function(){
+			window.location.hash = '#'+this.model.id;
+		    }
 		}),
-		SelectedItemPanel: Backbone.View.extend({
+		selectedItemPanel: Backbone.View.extend({
 			render: function(){
 				$(this.el).html(this.template(this.model.toJSON()));
+				if(this.model.get('link')){
+					this.$('img').wrap("<a href='"+this.model.get('link')+"' target='_blank' />");
+				}
 
 				var previouslySelected = this.model.collection.find(function(item){
 					return item.get("selected");
@@ -35,7 +45,7 @@ window.Works = function(){
 					previouslySelected.set({selected: false});
 				}
 				this.model.set({selected: true});
-				
+
 				return this;
 			}
 		})
@@ -45,7 +55,7 @@ window.Works = function(){
 		this.setUpTemplates();
 
 		var pieces = this.pieces = new Backbone.Collection();
-		pieces.url = 'data/portfolio.json';
+		pieces.url = 'portfolio/data/portfolio.json';
 		pieces.model = this.models.Piece;
 		pieces.comparator = function(piece){
 			return -1 * piece.get("year")
@@ -55,6 +65,7 @@ window.Works = function(){
 			this.setUpList();
 			this.setUpSelectedItem();
 			this.setUpController();
+			this.setUpKeyboardShortcuts();
 			this.trigger('refresh');
 		}, this));
 
@@ -62,10 +73,11 @@ window.Works = function(){
 	};
 
 	this.setUpList = function(){
-		var listPane = $('#listPane');
+		var listPane = $('#listPanel');
 		var lastYear;
-		this.pieces.each(function(item){
-			var view = new this.views.ListItemPanel({
+		this.pieces.each(function(item, index){
+			item.set({'index': index});
+			var view = new this.views.listPanel({
 				model: item,
 				showYear: item.get("year") != lastYear,
 				id: "listItem-" + item.id
@@ -73,12 +85,13 @@ window.Works = function(){
 			listPane.append(view.render().el);
 			lastYear = item.get("year");
 		}, this);
+	    this.setUpListScrolling(listPane);
 	};
 
 	this.setUpSelectedItem = function(){
-		var selectedItemPane = $('#selectedItemPane');
+		var selectedItemPane = $('#selectedItemPanel');
 		var item = this.pieces.first();
-		this.selectedItemView = new this.views.SelectedItemPanel({
+		this.selectedItemView = new this.views.selectedItemPanel({
 			model: item
 		});
 		selectedItemPane.empty().append(this.selectedItemView.render().el);
@@ -93,19 +106,133 @@ window.Works = function(){
 				this.selectedItemView.model = piece;
 			}
 			this.selectedItemView.render();
+
+			this.preloadPiece(this.getPieceByOffset(1));
+			window.scrollTo(0,0);
 		}, this));
 
 		Backbone.history.start();
 	};
 
-	this.setUpTemplates = function(){
-		this.views.ListItemPanel.prototype.template = generateAndHideTemplate('listItemTemplate');
-		this.views.SelectedItemPanel.prototype.template = generateAndHideTemplate('selectedItemTemplate');
+	this.setUpKeyboardShortcuts = function(){
+		$(document).keydown(_.bind(function(event){
+			var piece = null
+			switch(event.which){
+				case 39: //Right arrow key
+					piece = this.getPieceByOffset(1);
+					break;
+				case 37: //Left arrow key
+					piece = this.getPieceByOffset(-1);
+					break;
+				case 36: //Home
+					piece = this.getPieceByIndex(0);
+					break;
+				case 35: //End
+					piece = this.getPieceByIndex(this.pieces.length - 1);
+					break;
+			}
+
+			if(piece){
+				this.goToPiece(piece);
+				event.preventDefault();
+			    _.defer(this.scrollIfNecessary);
+			}
+		}, this));
 	};
 
-	function generateAndHideTemplate(id){
-		return _.template(decodeURIComponent($('#'+id).remove().html()));
+	this.getPieceByOffset = function(offset){
+		var currentIndex = this.selectedItemView.model.get('index');
+		var desiredIndex = currentIndex + offset;
+		return this.getPieceByIndex(desiredIndex);
+	};
+
+	this.getPieceByIndex = function(index){
+		return this.pieces.find(function(piece){
+			return piece.get("index") == index;
+		});
+	};
+
+	this.goToPiece = function(piece){
+		window.location.hash = piece.id;
+	};
+
+	this.preloadPiece = function(piece){
+		if(piece){
+			var domId = "preload";
+			var preloadContainer = $('#'+domId);
+			if(!preloadContainer.length){
+				preloadContainer = $("<div />").attr({id: domId}).css({'position': 'absolute', 'width': '1px', 'height': '1px', 'top': '0px', 'opacity': '0'});
+				$(document.body).append(preloadContainer);
+			}
+			preloadContainer.css('background-image', 'url("portfolio/artwork/'+piece.get('src')+'")');
+		}
+	};
+
+	this.setUpTemplates = function(){
+		var views = this.views;
+		$('.template').each(function(index, element){
+			element = $(element);
+			views[element.parent()[0].id].prototype.template = _.template(decodeURIComponent(element.remove().html()));
+		});
+	};
+
+    this.scrollIfNecessary = function(){
+	var listPanel = $('#listPanel');
+	var activeListItem = listPanel.find('li.selected');
+	var listItemWidth = activeListItem.width();
+	var listItemGutter = window.parseInt(activeListItem.css('margin-right'), 10);
+	
+	var isActiveItemPastLeftEdge = (activeListItem[0].offsetLeft - listItemGutter < listPanel[0].scrollLeft);
+	var isActiveItemPastRightEdge = (activeListItem[0].offsetLeft + listItemWidth + listItemGutter > listPanel[0].offsetWidth + listPanel[0].scrollLeft);
+
+	var newScrollLeft = null;
+
+	if(isActiveItemPastLeftEdge){
+	    console.log("active item is past left edge.");
+	    newScrollLeft = activeListItem[0].offsetLeft - listItemGutter /*- listPanel[0].offsetWidth*/;
+	} else if(isActiveItemPastRightEdge){
+	    console.log("active item is past right edge");
+	    newScrollLeft = activeListItem[0].offsetLeft + listItemWidth + listItemGutter - listPanel[0].offsetWidth;
+	} else {
+	    console.log("active item is visible");
 	}
+	
+	if(newScrollLeft != null){
+	    listPanel.animate({
+		scrollLeft: newScrollLeft
+	    }, 150);
+	}
+
+    };
+
+    this.setUpListScrolling = function(listPane){
+	var isMouseDown = false;
+	var wasScrolledSinceMouseDown = false;
+	var mouseDownX = 0;
+	var mouseDownPanelScrollOffset = 0;
+	listPane.bind('mousedown', function(event){
+	    isMouseDown = true;
+	    wasScrolledSinceMouseDown = false;
+	    mouseDownX = event.clientX;
+	    mouseDownPanelScrollOffset = listPane[0].scrollLeft;
+	});
+	var body = $('body');
+	body.bind('mouseup click', function(event){
+	    if(wasScrolledSinceMouseDown){
+		//alert('trying to prevent default');
+		event.preventDefault();
+		wasScrolledSinceMouseDown = false;
+	    }
+	    isMouseDown = false;
+	});
+	body.bind('mousemove', function(event){
+	    if(isMouseDown){
+		wasScrolledSinceMouseDown = true;
+		var offsetFromMouseDown = event.clientX - mouseDownX;
+		event.target.scrollLeft = mouseDownPanelScrollOffset - offsetFromMouseDown;
+	    }
+	});
+    };
 
 	this.initialize();
 };

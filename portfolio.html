@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>The Collected Works of Ben Hutchison</title>
+		<link href="portfolio/styles/all.css" rel="stylesheet" type="text/css" />
+	</head>
+
+	<body>
+		<div id="works">
+			<header>
+				<a href="./" title="Return to home page">
+					<h1>Ben Hutchison</h1>
+				</a>
+			</header>
+
+			<div id="selectedItemPanel">
+				<div class="template" style="display: none">
+					<img src="portfolio/artwork/{{src}}" />
+					<div class="note">
+						<span>
+							<em>{{title}}</em>, a <em>{{medium}}</em> created in <em>{{year}}</em> for <em>{{client}}</em>.
+						</span>
+					</div>
+				</div>
+			</div>
+
+			<ol id="listPanel">
+				<li class="template" style="display: none">
+					<!--<a href="#{{id}}">-->
+						<div class="year">{{year}}</div>
+						<div class="thumb" style="background-image: url('portfolio/artwork/64x64/{{src}}');" title="{{title}}"></div>
+					<!--</a>-->
+				</li>
+			</ol>
+
+			<script src="portfolio/scripts/lib/all.js" type="text/javascript"></script>
+			<script src="portfolio/scripts/Works.js" type="text/javascript"></script>
+			<script type="text/javascript">
+				var works = new Works();
+			</script>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,361 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset,
+img {
+  border: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+li {
+  list-style: none;
+}
+caption,
+th {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+q:before,
+q:after {
+  content: '';
+}
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+sup {
+  vertical-align: text-top;
+}
+sub {
+  vertical-align: text-bottom;
+}
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+input,
+textarea,
+select {
+  *font-size: 100%;
+}
+legend {
+  color: #000;
+}
+/* Fonts */
+@font-face {
+  font-family: 'Bookman';
+  src: url('../type/bookmanstd-bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bookman';
+  src: url('../type/bookmanstd-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'AvantGarde';
+  src: url('../type/itcavantgardestd-bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'AvantGarde';
+  src: url('../type/itcavantgardestd-md-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Futura';
+  src: url('../type/futurastd-extrabold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+/* Default Values */
+/* Default Styles*/
+body {
+  color: #ffffff;
+  width: 100%;
+  min-height: 100%;
+  background-color: #060403;
+  font-size: 80%;
+  position: absolute;
+}
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+a:hover {
+  color: black !important;
+  text-shadow: none;
+}
+a:hover img {
+  border-color: black !important;
+  box-shadow: none !important;
+}
+/* Functions */
+.wood-background {
+  background-image: url('../images/wood.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+}
+#index {
+  color: white;
+  text-shadow: 0 2px 1px rgba(0, 0, 0, 0.4);
+}
+#index h2 {
+  font-family: "AvantGarde";
+}
+#index h3 {
+  font-family: "Bookman";
+}
+#index header h1 {
+  text-indent: -9999px;
+  display: inline-block;
+  width: 419px;
+  height: 45px;
+  background: url('../images/title_big.png') no-repeat;
+}
+#index header h3,
+#index header nav {
+  text-align: right;
+}
+#index header h3 {
+  text-align: right;
+  font-size: 17px;
+  margin-top: 22px;
+  margin-bottom: 33px;
+}
+#index header h2 {
+  font-size: 31px;
+  font-weight: bold;
+  margin-bottom: 17px;
+}
+#index header h2 a:active {
+  position: relative;
+  top: 1px;
+}
+#index aside h2 {
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+#index aside h2:not(:first-child) {
+  margin-top: 17px;
+}
+#index aside span {
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 20px;
+}
+#index aside blockquote,
+#index aside span {
+  font-family: "Bookman";
+}
+#index aside a blockquote {
+  padding-left: 23px;
+  text-indent: -23px;
+  margin-left: -22px;
+}
+#index aside a blockquote q {
+  font-size: 32px;
+  font-weight: bold;
+  height: 1px;
+  display: inline-block;
+  vertical-align: top;
+  width: 18.400000000000002px;
+  text-indent: 0;
+}
+#index aside a:hover {
+  color: black;
+}
+#index aside img {
+  border: 3px solid white;
+  border-radius: 3px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.4);
+}
+#index aside .thisismyjam {
+  display: none;
+}
+#index {
+  background-image: url('../images/wood.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  background-position: bottom center;
+  background-color: #e47d36;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+#index header,
+#index aside {
+  position: absolute;
+  top: 30%;
+  max-width: 50%;
+  box-sizing: border-box;
+}
+#index header {
+  right: 50%;
+  padding-left: 100px;
+  padding-right: 29px;
+}
+#index aside {
+  left: 50%;
+  width: 550px;
+  margin-top: 68px;
+  padding-right: 100px;
+  padding-left: 29px;
+}
+#works {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+#works .pane_background {
+  background-color: rgba(0, 0, 0, 0.88);
+}
+#works header {
+  height: 102px;
+  background-image: url('../images/wood.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  background-position: 0 87%;
+  box-shadow: inset 0 -4px 8px #000000;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 25px 0 0 29px;
+}
+#works header h1 {
+  text-indent: -9999px;
+  display: inline-block;
+  width: 309px;
+  height: 34px;
+  background: url('../images/title_medium.png') no-repeat;
+}
+#works header h1:active {
+  margin-top: 1px;
+}
+#works #selectedItemPanel {
+  padding-top: 17px;
+  padding-bottom: 185px;
+}
+#works #selectedItemPanel > div {
+  text-align: center;
+}
+#works #selectedItemPanel > div .note {
+  position: fixed;
+  width: 100%;
+  bottom: 150px;
+  margin: 8px auto 0;
+  color: #ababab;
+  font: 13px "AvantGarde";
+}
+#works #selectedItemPanel > div .note span {
+  background-color: rgba(0, 0, 0, 0.88);
+  padding: 8px 11px 6px;
+  line-height: 17px;
+  border-radius: 5px;
+}
+#works #selectedItemPanel > div .note em {
+  color: #ffffff;
+  font-style: normal;
+}
+#works #listPanel {
+  position: fixed;
+  bottom: 0;
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  white-space: nowrap;
+  padding-bottom: 17px;
+  border-top: 1px solid #2b2b2b;
+  cursor: move;
+  background-color: rgba(0, 0, 0, 0.88);
+}
+#works #listPanel li {
+  vertical-align: top;
+  display: inline-block;
+  position: relative;
+  padding-top: 27px;
+  margin-right: 17px;
+  border-top: 2px solid transparent;
+}
+#works #listPanel li .year {
+  position: absolute;
+  top: 8px;
+  font-weight: bold;
+  font-size: 9px;
+  color: #808080;
+  font-family: 'Futura';
+  font-weight: bold;
+}
+#works #listPanel li .thumb {
+  width: 64px;
+  height: 64px;
+  cursor: pointer;
+}
+#works #listPanel li:first-child {
+  margin-left: 17px;
+}
+#works #listPanel li.selected {
+  border-top-color: rgba(255, 255, 255, 0.75);
+}
+#works #listPanel li:hover:not(.selected) {
+  border-top-color: rgba(255, 255, 255, 0.35);
+}
