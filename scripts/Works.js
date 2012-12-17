@@ -18,18 +18,18 @@ window.Works = function(){
 				_.bindAll(this, "render");
 				this.model.bind('change', this.render);
 			},
-		    events: {
+			events: {
 			'click .thumb': 'onThumbClick'
-		    },
+			},
 			render: function(){
 				$(this.el).html(this.template(this.model.toJSON()));
 				this.$('.year').toggle(this.options.showYear);
 				$(this.el).toggleClass("selected", this.model.get("selected"));
 				return this;
 			},
-		    onThumbClick: function(){
+			onThumbClick: function(){
 			window.location.hash = '#'+this.model.id;
-		    }
+			}
 		}),
 		selectedItemPanel: Backbone.View.extend({
 			render: function(){
@@ -85,7 +85,7 @@ window.Works = function(){
 			listPane.append(view.render().el);
 			lastYear = item.get("year");
 		}, this);
-	    this.setUpListScrolling(listPane);
+		this.setUpListScrolling(listPane);
 	};
 
 	this.setUpSelectedItem = function(){
@@ -135,7 +135,7 @@ window.Works = function(){
 			if(piece){
 				this.goToPiece(piece);
 				event.preventDefault();
-			    _.defer(this.scrollIfNecessary);
+				_.defer(this.scrollIfNecessary);
 			}
 		}, this));
 	};
@@ -176,63 +176,67 @@ window.Works = function(){
 		});
 	};
 
-    this.scrollIfNecessary = function(){
-	var listPanel = $('#listPanel');
-	var activeListItem = listPanel.find('li.selected');
-	var listItemWidth = activeListItem.width();
-	var listItemGutter = window.parseInt(activeListItem.css('margin-right'), 10);
-	
-	var isActiveItemPastLeftEdge = (activeListItem[0].offsetLeft - listItemGutter < listPanel[0].scrollLeft);
-	var isActiveItemPastRightEdge = (activeListItem[0].offsetLeft + listItemWidth + listItemGutter > listPanel[0].offsetWidth + listPanel[0].scrollLeft);
+	this.scrollIfNecessary = function(){
+		var listPanel = $('#listPanel');
+		var activeListItem = listPanel.find('li.selected');
+		var listItemWidth = activeListItem.width();
+		var listItemGutter = window.parseInt(activeListItem.css('margin-right'), 10);
+		
+		var isActiveItemPastLeftEdge = (activeListItem[0].offsetLeft - listItemGutter < listPanel[0].scrollLeft);
+		var isActiveItemPastRightEdge = (activeListItem[0].offsetLeft + listItemWidth + listItemGutter > listPanel[0].offsetWidth + listPanel[0].scrollLeft);
 
-	var newScrollLeft = null;
+		var newScrollLeft = null;
 
-	if(isActiveItemPastLeftEdge){
-	    console.log("active item is past left edge.");
-	    newScrollLeft = activeListItem[0].offsetLeft - listItemGutter /*- listPanel[0].offsetWidth*/;
-	} else if(isActiveItemPastRightEdge){
-	    console.log("active item is past right edge");
-	    newScrollLeft = activeListItem[0].offsetLeft + listItemWidth + listItemGutter - listPanel[0].offsetWidth;
-	} else {
-	    console.log("active item is visible");
-	}
-	
-	if(newScrollLeft != null){
-	    listPanel.animate({
-		scrollLeft: newScrollLeft
-	    }, 150);
-	}
+		if(isActiveItemPastLeftEdge){
+			console.log("active item is past left edge.");
+			newScrollLeft = activeListItem[0].offsetLeft - listItemGutter /*- listPanel[0].offsetWidth*/;
+		} else if(isActiveItemPastRightEdge){
+			console.log("active item is past right edge");
+			newScrollLeft = activeListItem[0].offsetLeft + listItemWidth + listItemGutter - listPanel[0].offsetWidth;
+		} else {
+			console.log("active item is visible");
+		}
+		
+		if(newScrollLeft != null){
+			listPanel.animate({
+			scrollLeft: newScrollLeft
+			}, 150);
+		}
 
-    };
+	};
 
-    this.setUpListScrolling = function(listPane){
-	var isMouseDown = false;
-	var wasScrolledSinceMouseDown = false;
-	var mouseDownX = 0;
-	var mouseDownPanelScrollOffset = 0;
-	listPane.bind('mousedown', function(event){
-	    isMouseDown = true;
-	    wasScrolledSinceMouseDown = false;
-	    mouseDownX = event.clientX;
-	    mouseDownPanelScrollOffset = listPane[0].scrollLeft;
-	});
-	var body = $('body');
-	body.bind('mouseup click', function(event){
-	    if(wasScrolledSinceMouseDown){
-		//alert('trying to prevent default');
-		event.preventDefault();
-		wasScrolledSinceMouseDown = false;
-	    }
-	    isMouseDown = false;
-	});
-	body.bind('mousemove', function(event){
-	    if(isMouseDown){
-		wasScrolledSinceMouseDown = true;
-		var offsetFromMouseDown = event.clientX - mouseDownX;
-		event.target.scrollLeft = mouseDownPanelScrollOffset - offsetFromMouseDown;
-	    }
-	});
-    };
+	this.setUpListScrolling = function(listPane){
+		var isMouseDown = false;
+		var wasScrolledSinceMouseDown = false;
+		var mouseDownX = 0;
+		var mouseDownPanelScrollOffset = 0;
+		listPane.bind('mousedown', function(event){
+			isMouseDown = true;
+			wasScrolledSinceMouseDown = false;
+			mouseDownX = event.clientX;
+			mouseDownPanelScrollOffset = listPane[0].scrollLeft;
+		});
+		var body = $('body');
+		body.bind('mouseup click', function(event){
+			if(wasScrolledSinceMouseDown){
+			//alert('trying to prevent default');
+			event.preventDefault();
+			wasScrolledSinceMouseDown = false;
+			}
+			isMouseDown = false;
+		});
+		body.bind('mousemove', function(event){
+			if(isMouseDown){
+			wasScrolledSinceMouseDown = true;
+			var offsetFromMouseDown = event.clientX - mouseDownX;
+			event.target.scrollLeft = mouseDownPanelScrollOffset - offsetFromMouseDown;
+			}
+		});
+		listPane.bind('mousewheel DOMMouseScroll', function(event){
+			event.preventDefault();
+			listPane[0].scrollLeft -= 30 * ((((event.wheelDelta || event.detail) > 0) ^ $.browser.mozilla) ? 1 : -1);
+		});
+	};
 
 	this.initialize();
 };

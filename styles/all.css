@@ -319,7 +319,10 @@ a:hover img {
 #works #listPanel {
   position: fixed;
   bottom: 0;
-  overflow: hidden;
+  /*overflow: hidden;*/
+
+  overflow-x: auto;
+  overflow-y: hidden;
   left: 0;
   right: 0;
   white-space: nowrap;
