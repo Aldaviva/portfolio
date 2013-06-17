@@ -47,9 +47,7 @@ window.Index = function(){
 	};
 
 	this.setUpTwitterPipe = function(){
-		this.twitterPipe = new JsonRestApiPipe("http://api.twitter.com/1/users/show.json", {
-			'screen_name': "aldaviva"
-		});
+		this.twitterPipe = new JsonRestApiPipe("http://aldaviva.com/portfolio/twitter.php", {});
 
 		this.twitterPipe.getLatestMessage(_.bind(function(data){
 			var message = data.status.text;

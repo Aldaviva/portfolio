@@ -1,5 +1,46 @@
 [
 	{
+		"id": "fathers_day_2008",
+		"title": "Happy Father's Day",
+		"client": "Mr. Hutchison",
+		"medium": "card",
+		"year": "2008",
+		"src": "fathersday2008.jpg"
+	},
+	{
+		"id": "mothers_day_2008",
+		"title": "Happy Mother's Day",
+		"client": "Mrs. Hutchison",
+		"medium": "card",
+		"year": "2008",
+		"description": "Any self-respecting designer should create his own Mother's Day card.",
+		"src": "mothersday2008.jpg"
+	},
+	{
+		"id": "fathers_day_2010",
+		"title": "Happy Father's Day",
+		"client": "Mr. Hutchison",
+		"medium": "card",
+		"year": "2010",
+		"src": "fathersday2010.jpg"
+	},
+	{
+		"id": "dads_birthday_2011",
+		"title": "Happy Birthday, Dad",
+		"client": "Mr. Hutchison",
+		"medium": "card",
+		"year": "2011",
+		"src": "dadsbirthday2011.jpg"
+	},
+	{
+		"id": "mothers_day_2011",
+		"title": "Happy Tiger Lillies",
+		"client": "Mrs. Hutchison",
+		"medium": "card",
+		"year": "2011",
+		"src": "mothersday2011.jpg"
+	},
+	{
 		"id": "cheese_night",
 		"title": "Cheese Night",
 		"client": "Technology House",
@@ -109,12 +150,13 @@
 	},
 	{
 		"id": "april_fools_2009",
-		"title": "April Fools' Day",
+		"title": "Host Club (April Fools' Day)",
 		"client": "Technology House",
 		"medium": "web site",
 		"year": "2009",
 		"description": "Tech House turned into a Host Club on April 1, offering the noble services of various members for the sophisticated pleasure of the discerning bachelor or d\u00e9butante. This was a group project that unfolded in a few short hours inside Tech House Black Ops, right up against the deadline. The site consisted of twenty-three pages, but cunning use of PHP, CSS, XML and XSLT made short work of this challenge.",
-		"src": "aprilfools09.jpg"
+		"src": "aprilfools09.jpg",
+		"link": "https://techhouse.org/attic/2008-09/aprilfools/"
 	},
 	{
 		"id": "crest",
@@ -135,15 +177,6 @@
 		"src": "eastec.jpg"
 	},
 	{
-		"id": "mothers_day_2008",
-		"title": "Mothers' Day",
-		"client": "Mrs. Hutchison",
-		"medium": "card",
-		"year": "2008",
-		"description": "Any self-respecting designer should create his own Mothers' Day card.",
-		"src": "mothersday2008.jpg"
-	},
-	{
 		"id": "photography_mk2",
 		"title": "Tech House Photography Mk.II",
 		"client": "Technology House",
@@ -159,16 +192,25 @@
 		"medium": "web application",
 		"year": "2009",
 		"description": "Features voting, AJAX, XML storage, RSS feed, web and command-line interfaces, and easy year-to-year migration. Progressively enhanced, of course.",
-		"src": "quotes.jpg"
+		"src": "quotes.jpg",
+		"link": "https://techhouse.org/quotes"
 	},
 	{
 		"id": "swiss_army_knife",
-		"title": "Swiss Army Tech House",
+		"title": "Swiss Army Knife",
 		"client": "Technology House",
 		"medium": "shirt",
 		"year": "2009",
 		"description": "My second submission to the annual t-shirt design competition. This entry tied for first and was adopted for use in many subsequent Tech House publications.",
 		"src": "swissarmyknife.jpg"
+	},
+	{
+		"id": "aldaviva_1",
+		"title": "Aldaviva 1",
+		"client": "personal use",
+		"medium": "web site",
+		"year": "2005",
+		"src": "aldaviva_1.jpg"
 	},
 	{
 		"id": "uploader",
@@ -177,15 +219,24 @@
 		"medium": "web application",
 		"year": "2005",
 		"description": "My first web application, where I learned about PHP, file uploads, access control, pre-AJAX Javascript integration, and usability.",
-		"src": "Uploader.png"
+		"src": "Uploader.jpg"
 	},
 	{
 		"id": "thlaundry",
 		"title": "THLaundry",
 		"client": "Technology House",
+		"medium": "hoax of a web site",
+		"year": "2010",
+		"src": "thlaundry.jpg",
+		"link": "http://thlaundry.techhouse.org"
+	},
+	{
+		"id": "republic_of_the_southern_cross",
+		"title": "Republic of the Southern Cross: Disaster Analysis",
+		"client": "Russian 1200 at Brown University",
 		"medium": "web site",
 		"year": "2010",
-		"src": "thlaundry.jpg"
+		"src": "starcity.jpg"
 	},
 	{
 		"id": "photography_mk3",
@@ -193,7 +244,8 @@
 		"client": "Technology House",
 		"medium": "web application",
 		"year": "2010",
-		"src": "techhousephotography.jpg"
+		"src": "techhousephotography.jpg",
+		"link": "https://techhouse.org/photogallery"
 	},
 	{
 		"id": "apparel",
@@ -204,20 +256,61 @@
 		"src": "thapparel.jpg"
 	},
 	{
-		"id": "autorpg",
-		"title": "AutoRPG",
-		"client": "personal use",
-		"medium": "web application",
-		"year": "2010",
-		"src": "autorpg.jpg"
-	},
-	{
 		"id": "recruiting_flyer",
 		"title": "Cisco Recruiting Flyer",
 		"client": "Cisco Systems",
 		"medium": "flyer",
 		"year": "2010",
 		"src": "ciscorecruiting.jpg"
+	},
+	{
+		"id": "map",
+		"title": "Tech House Map",
+		"client": "Literary Arts 1010D at Brown University",
+		"medium": "web application",
+		"year": "2009",
+		"src": "techhousemap.jpg",
+		"link": "http://aldaviva.com/map"
+	},
+	{
+		"id": "panoramas",
+		"title": "Panoramas",
+		"client": "Literary Arts 1110C at Brown University",
+		"medium": "3D virtual reality interactive simulation",
+		"year": "2007",
+		"src": "panoramas.jpg"
+	},
+	{
+		"id": "campus_safety_map",
+		"title": "Nighttime Campus Safety",
+		"client": "Geology 1320 at Brown University",
+		"medium": "poster",
+		"year": "2007",
+		"src": "campussafetymap.jpg"
+	},
+	{
+		"id": "nysc",
+		"title": "NYSC Yearbook",
+		"client": "the National Youth Science Foundation",
+		"medium": "web site and DVD",
+		"year": "2009",
+		"src": "nysc.jpg"
+	},
+	{
+		"id": "crew_banquet_2007",
+		"title": "Crew Banquet 2007",
+		"client": "the Warwick Valley Crew Club",
+		"medium": "slideshow and video",
+		"year": "2007",
+		"src": "crew_banquet_2007.jpg"
+	},
+	{
+		"id": "crew_banquet_2008",
+		"title": "Crew Banquet 2008",
+		"client": "the Warwick Valley Crew Club",
+		"medium": "slideshow and video",
+		"year": "2008",
+		"src": "crew_banquet_2008.jpg"
 	},
 	{
 		"id": "coal_powered_websites",
@@ -228,43 +321,161 @@
 		"src": "coalpoweredwebsites.jpg"
 	},
 	{
-		"id": "star_city",
-		"title": "Star City",
-		"client": "Russian 1200 at Brown University",
-		"medium": "web site",
-		"year": "2010",
-		"src": "starcity.jpg"
+		"id": "roommate_wanted",
+		"title": "Roommate Wanted",
+		"client": "personal use",
+		"medium": "flyer",
+		"year": "2011",
+		"src": "roommate_wanted.jpg"
 	},
 	{
-		"id": "map",
-		"title": "Tech House Map",
-		"client": "Literary Arts 1010D at Brown University",
+		"id": "fathers_day_2011",
+		"title": "Happy Father's Day!",
+		"client": "Mr. Hutchison",
+		"medium": "card",
+		"year": "2011",
+		"src": "fathersday2011.jpg"
+	},
+	{
+		"id": "ctx_admin",
+		"title": "Cisco TelePresence Exchange System Administration",
+		"client": "Cisco Systems",
 		"medium": "web application",
-		"year": "2009",
-		"src": "techhousemap.jpg"
+		"year": "2011",
+		"src": "ctx_logcapture.png"
 	},
 	{
-		"id": "panoramas",
-		"title": "Panoramas",
-		"client": "Literary Arts 1110C at Brown University",
-		"medium": "3D virtual reality simulation",
-		"year": "2007",
-		"src": "panoramas.jpg"
+		"id": "myvrm",
+		"title": "myVRM-X Scheduling Portal",
+		"client": "myVRM",
+		"medium": "web site mock-up",
+		"year": "2011",
+		"src": "myvrm.png"
 	},
 	{
-		"id": "campus_safety_map",
-		"title": "Campus Safety Map",
-		"client": "Geology 1320 at Brown University",
+		"id": "ciscolive",
+		"title": "Cisco TelePresence Active Meeting Management for iPad",
+		"client": "Cisco Systems",
+		"medium": "web application",
+		"year": "2011",
+		"src": "ciscolive.png"
+	},
+	{
+		"id": "ctx_upgrade_admin",
+		"title": "Cisco TelePresence Exchange System Upgrade",
+		"client": "Cisco Systems",
+		"medium": "web application",
+		"year": "2011",
+		"src": "ctx-upgrade-admin.png"
+	},
+	{
+		"id": "skinny",
+		"title": "Project Skinny",
+		"client": "Blue Jeans Network",
+		"medium": "browser-based video conferencing client",
+		"year": "2012",
+		"src": "skinny-ui.jpg"
+	},
+	{
+		"id": "acid",
+		"title": "Acid",
+		"client": "Blue Jeans Network",
+		"medium": "iOS video conferencing client",
+		"year": "2012",
+		"src": "acid.jpg"
+	},
+	{
+		"id": "skinny_dashboard",
+		"title": "Tailor",
+		"client": "Blue Jeans Network",
+		"medium": "dashboard",
+		"year": "2012",
+		"src": "skinnydashboard.png"
+	},
+	{
+		"id": "cashman",
+		"title": "Cashman and Wallette",
+		"client": "personal use",
+		"medium": "cloud application and mobile client",
+		"year": "2012",
+		"src": "wallette.png"
+	},
+	{
+		"id": "eircd",
+		"title": "eircd",
+		"client": "personal use",
+		"medium": "IRC server",
+		"year": "2012",
+		"src": "eircd.jpg"
+		},
+	{
+		"id": "skinny_developer_console",
+		"title": "Developer Console",
+		"client": "Blue Jeans Network",
+		"medium": "cheat code",
+		"year": "2012",
+		"src": "skinny_developer_console.png"
+	},
+	{
+		"id": "lumberjack",
+		"title": "Lumberjack",
+		"client": "Blue Jeans Network",
+		"medium": "web application",
+		"year": "2012",
+		"src": "lumberjack.png"
+	},
+	{
+		"id": "rollway",
+		"title": "Rollway",
+		"client": "Blue Jeans Network",
+		"medium": "server",
+		"year": "2013",
+		"src": "rollway-ui.png"
+	},
+	{
+		"id": "buildonwrite",
+		"title": "Build on Write",
+		"client": "Blue Jeans Network",
+		"medium": "script",
+		"year": "2013",
+		"src": "buildonwrite.png"
+	},
+	{
+		"id": "quotables",
+		"title": "Quotables",
+		"client": "personal use",
+		"medium": "dashboard",
+		"year": "2013",
+		"src": "quotables.jpg"
+	},
+	{
+		"id": "rollway_analytics",
+		"title": "Rollway Analytics",
+		"client": "Blue Jeans Network",
+		"medium": "dashboard",
+		"year": "2013",
+		"src": "rollway_analytics.png"
+	},{
+		"id": "endpointmix",
+		"title": "Endpoint Mix",
+		"client": "Blue Jeans Network",
+		"medium": "dashboard",
+		"year": "2013",
+		"src": "endpointmix.png"
+	},{
+		"id": "shipit",
+		"title": "Ship It!",
+		"client": "Blue Jeans Network",
+		"medium": "dashboard",
+		"year": "2013",
+		"src": "shipit.png"
+	},
+	{
+		"id": "ratelimiting",
+		"title": "Strategies for Rate-Limiting",
+		"client": "Blue Jeans Network",
 		"medium": "poster",
-		"year": "2007",
-		"src": "campussafetymap.jpg"
-	},
-	{
-		"id": "stereoscopic",
-		"title": "Stereoscopic Images",
-		"client": "Cognitive Science 0110 at Brown University",
-		"medium": "web site",
-		"year": "2008",
-		"src": "stereoscopic.jpg"
+		"year": "2013",
+		"src": "ratelimiting.png"
 	}
 ]
