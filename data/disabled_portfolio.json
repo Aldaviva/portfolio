@@ -1,0 +1,51 @@
+[
+	{
+		"id": "fathers_day_2008",
+		"title": "Happy Father's Day",
+		"client": "Mr. Hutchison",
+		"medium": "card",
+		"year": "2008",
+		"src": "fathersday2008.jpg"
+	},
+	{
+		"id": "mothers_day_2008",
+		"title": "Happy Mother's Day",
+		"client": "Mrs. Hutchison",
+		"medium": "card",
+		"year": "2008",
+		"description": "Any self-respecting designer should create his own Mother's Day card.",
+		"src": "mothersday2008.jpg"
+	},
+	{
+		"id": "fathers_day_2010",
+		"title": "Happy Father's Day",
+		"client": "Mr. Hutchison",
+		"medium": "card",
+		"year": "2010",
+		"src": "fathersday2010.jpg"
+	},
+	{
+		"id": "dads_birthday_2011",
+		"title": "Happy Birthday, Dad",
+		"client": "Mr. Hutchison",
+		"medium": "card",
+		"year": "2011",
+		"src": "dadsbirthday2011.jpg"
+	},
+	{
+		"id": "mothers_day_2011",
+		"title": "Happy Tiger Lillies",
+		"client": "Mrs. Hutchison",
+		"medium": "card",
+		"year": "2011",
+		"src": "mothersday2011.jpg"
+	},
+	{
+		"id": "fathers_day_2011",
+		"title": "Happy Father's Day!",
+		"client": "Mr. Hutchison",
+		"medium": "card",
+		"year": "2011",
+		"src": "fathersday2011.jpg"
+	}
+]

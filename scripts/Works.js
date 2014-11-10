@@ -1,5 +1,7 @@
 window.Works = function(){
 
+	var VOWELS = ['a', 'e', 'i', 'o', 'u'];
+
 	_.extend(this, Backbone.Events);
 
 	this.models = {
@@ -7,6 +9,14 @@ window.Works = function(){
 			defaults: {
 				selected: false,
 				index: -1
+			},
+
+			initialize: function(){
+				var medium = this.get('medium');
+				var article = _(VOWELS).contains(medium.charAt(0).toLowerCase())
+					? 'an'
+					: 'a';
+				this.set({ article: article });
 			}
 		})
 	};
@@ -239,4 +249,6 @@ window.Works = function(){
 	};
 
 	this.initialize();
+
+	return this;
 };

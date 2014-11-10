@@ -1,46 +1,5 @@
 [
 	{
-		"id": "fathers_day_2008",
-		"title": "Happy Father's Day",
-		"client": "Mr. Hutchison",
-		"medium": "card",
-		"year": "2008",
-		"src": "fathersday2008.jpg"
-	},
-	{
-		"id": "mothers_day_2008",
-		"title": "Happy Mother's Day",
-		"client": "Mrs. Hutchison",
-		"medium": "card",
-		"year": "2008",
-		"description": "Any self-respecting designer should create his own Mother's Day card.",
-		"src": "mothersday2008.jpg"
-	},
-	{
-		"id": "fathers_day_2010",
-		"title": "Happy Father's Day",
-		"client": "Mr. Hutchison",
-		"medium": "card",
-		"year": "2010",
-		"src": "fathersday2010.jpg"
-	},
-	{
-		"id": "dads_birthday_2011",
-		"title": "Happy Birthday, Dad",
-		"client": "Mr. Hutchison",
-		"medium": "card",
-		"year": "2011",
-		"src": "dadsbirthday2011.jpg"
-	},
-	{
-		"id": "mothers_day_2011",
-		"title": "Happy Tiger Lillies",
-		"client": "Mrs. Hutchison",
-		"medium": "card",
-		"year": "2011",
-		"src": "mothersday2011.jpg"
-	},
-	{
 		"id": "cheese_night",
 		"title": "Cheese Night",
 		"client": "Technology House",
@@ -48,8 +7,7 @@
 		"year": "2009",
 		"description": "I wanted to create a more classical look, but not to overdo it with flashy fonts and flourishes. The spatial balance, typography, and clean simplicity reflected the attitude of the event: refined and distinguished.",
 		"src": "cheesenight.jpg"
-	},
-	{
+	},{
 		"id": "euro_dance",
 		"title": "Euro Dance",
 		"client": "Technology House",
@@ -57,8 +15,7 @@
 		"year": "2009",
 		"description": "As an advertisement for a dance party, this design aimed to be effective by showing an exciting scene. The silhouettes were chosen to look joyful and energetic. Below, the details are presented in an ornate style to give the design a unique style.",
 		"src": "eurodance.jpg"
-	},
-	{
+	},{
 		"id": "firecream",
 		"title": "Firecream",
 		"client": "Technology House",
@@ -66,8 +23,7 @@
 		"year": "2009",
 		"description": "One challenge faced in this design was the name of the event. House members all know what Firecream is, but it makes no sense for everyone else. I decided to describe the event so that people could understand what happened and minimize the fact that it had a silly name. \"Ice Cream, Beside a roaring fireplace\" is more attractive and makes more sense.",
 		"src": "firecream.jpg"
-	},
-	{
+	},{
 		"id": "helium_party",
 		"title": "Helium Party",
 		"client": "Technology House",
@@ -75,8 +31,7 @@
 		"year": "2008",
 		"description": "The first thing that came to mind was to create a design with helium balloons. The second idea was to have content that looked nothing like helium, but was funny, a little puzzling, related to the idea of floating, and (most of all) memorable.",
 		"src": "heliumparty.jpg"
-	},
-	{
+	},{
 		"id": "javaspook_2008",
 		"title": "Javaspook 2008",
 		"client": "Technology House",
@@ -84,8 +39,7 @@
 		"year": "2008",
 		"description": "This design continued in the proud, slick-looking Tech House tradition of tableslips with lots of black ink. They tend to stand out well when they are deployed. The high-contrast moon and large white text stand out from the dark background.",
 		"src": "javaspook2008.jpg"
-	},
-	{
+	},{
 		"id": "javaspook_2009",
 		"title": "Javaspook 2009",
 		"client": "Technology House",
@@ -93,8 +47,7 @@
 		"year": "2009",
 		"description": "The main focus of this design is the grid of six items in the center, representing the major selling points of this event. The content of each cell was chosen to be easy to recognize, obvious in meaning, and dark enough to starkly stand out against the light background.",
 		"src": "javaspook2009.jpg"
-	},
-	{
+	},{
 		"id": "mafia",
 		"title": "Mafia",
 		"client": "Technology House",
@@ -102,8 +55,7 @@
 		"year": "2009",
 		"description": "A game like Mafia calls for a dark tableslip design with grunge fonts, a dirty background texture, and gentlemen in suits. A little bit of Fake Italiano never hurts, either.",
 		"src": "mafia.jpg"
-	},
-	{
+	},{
 		"id": "apples_to_apples",
 		"title": "Apples to Apples",
 		"client": "Technology House",
@@ -111,8 +63,7 @@
 		"year": "2008",
 		"description": "An orange makes a prominent appearance in this design because orange slices were served during the game, and the event was almost called Oranges to Oranges. I am very happy with this design. The lady is excited, and human faces draw the viewer's attention like a magnet, especially when the faces are looking at important information. Second, the text on a slant looks very spiffy. Slab serif seals the deal.",
 		"src": "apples.jpg"
-	},
-	{
+	},{
 		"id": "spam_poetry",
 		"title": "Spam Poetry",
 		"client": "Technology House",
@@ -120,8 +71,7 @@
 		"year": "2009",
 		"description": "Using 3D techniques to make the text look more like it physically exists in the scene. The source image captured the heart of the event's experience quite well.",
 		"src": "spampoetry.jpg"
-	},
-	{
+	},{
 		"id": "stuff_night_adoch",
 		"title": "Stuff Night for A Day on College Hill",
 		"client": "Technology House",
@@ -129,8 +79,7 @@
 		"year": "2009",
 		"description": "Unlike many other Tech House publications, this design was whipped up to be passed around in the evening during A Day on College Hill. Prospective freshmen were welcomed to attend our Stuff Night, so the target audience was a 17-year-old who may not even know about Tech House, but was making plans for that evening. Also, the viewer would be on the receiving end of a face-to-face pitch from a Tech House member that described the event. This drove some design decisions:  the overall goal of the flyer was to remind the recipient of the conversation, not introduce it anew. I also wanted to include a large version of our cool logo and give them the means to find the building. Lesson learned:  find out if your materials are going to be viewed in low-light situations and increase the content size or paper size accordingly.",
 		"src": "stuffnight2.jpg"
-	},
-	{
+	},{
 		"id": "stuff_night",
 		"title": "Stuff Night",
 		"client": "Technology House",
@@ -138,8 +87,7 @@
 		"year": "2009",
 		"description": "This series of tableslip designs continued the polished, sophisticated design theme for Tech House publications. Column layouts are great, and this one works well with elegant serif type and the flourish for balance. This tableslip was the first design to include double-sided printing, which gave the front more room without a map wedged into a corner, and the back had a large, gorgeous map with destination callout. The inclusion of a readable, helpful map was important because publication corresponded to the first public event of the school year, so the target audience was the new student that didn't know where Tech House was located. A new challenge involved letting the audience know that there was a back side to the printing. To do so, I included the notice in the lower right area, in case the tableslip landed face-up, and used light background colors on the front so the high-contrast map would show through given the slightest bit of backlight when the slip is lifted from the table.",
 		"src": "stuffnight3.jpg"
-	},
-	{
+	},{
 		"id": "techno_dance",
 		"title": "Techo Dance",
 		"client": "Technology House",
@@ -147,8 +95,7 @@
 		"year": "2009",
 		"description": "Series of tableslips advertising a party I was DJing. The font I chose is really groovy and Unicode-tastic, the background is pretty high-energy, and the silhouettes are excited and good-looking. It's a shame that we didn't have color printing available, because the background started out as a hot red blast.",
 		"src": "technodance.jpg"
-	},
-	{
+	},{
 		"id": "april_fools_2009",
 		"title": "Host Club (April Fools' Day)",
 		"client": "Technology House",
@@ -157,8 +104,7 @@
 		"description": "Tech House turned into a Host Club on April 1, offering the noble services of various members for the sophisticated pleasure of the discerning bachelor or d\u00e9butante. This was a group project that unfolded in a few short hours inside Tech House Black Ops, right up against the deadline. The site consisted of twenty-three pages, but cunning use of PHP, CSS, XML and XSLT made short work of this challenge.",
 		"src": "aprilfools09.jpg",
 		"link": "https://techhouse.org/attic/2008-09/aprilfools/"
-	},
-	{
+	},{
 		"id": "crest",
 		"title": "Crest",
 		"client": "Technology House",
@@ -166,8 +112,7 @@
 		"year": "2008",
 		"description": "I combined the trusty old circular Tech House logo with a medieval coat-of-arms motif, complete with satellite dish, for the annual t-shirt design competition. Mine was a smashing hit and I see people wearing these t-shirts and hoodies all the time.",
 		"src": "crest.jpg"
-	},
-	{
+	},{
 		"id": "eastec",
 		"title": "Eastec",
 		"client": "New Visions Engineering",
@@ -175,8 +120,7 @@
 		"year": "2006",
 		"description": "A group project for a high school engineering course. Our class attended a trade show that included a student poster contest. Our entry, a 4' \u00d7 3' poster I created in Illustrator and Photoshop, showcased the different local companies we had taken tours of.",
 		"src": "eastec.jpg"
-	},
-	{
+	},{
 		"id": "photography_mk2",
 		"title": "Tech House Photography Mk.II",
 		"client": "Technology House",
@@ -184,8 +128,7 @@
 		"year": "2008",
 		"description": "Tech House's old photo gallery was a mess of Perl and slower than slow. I rewrote it, maintaining backwards compatibility but including faster page loads, a thumbnail index page, keyboard navigation, a thumbnail frame inside galleries, better metadata display, and a web-based gallery publishing tool.",
 		"src": "photogallery1.jpg"
-	},
-	{
+	},{
 		"id": "quotes",
 		"title": "Quotes Page",
 		"client": "Technology House",
@@ -194,8 +137,7 @@
 		"description": "Features voting, AJAX, XML storage, RSS feed, web and command-line interfaces, and easy year-to-year migration. Progressively enhanced, of course.",
 		"src": "quotes.jpg",
 		"link": "https://techhouse.org/quotes"
-	},
-	{
+	},{
 		"id": "swiss_army_knife",
 		"title": "Swiss Army Knife",
 		"client": "Technology House",
@@ -203,16 +145,14 @@
 		"year": "2009",
 		"description": "My second submission to the annual t-shirt design competition. This entry tied for first and was adopted for use in many subsequent Tech House publications.",
 		"src": "swissarmyknife.jpg"
-	},
-	{
+	},{
 		"id": "aldaviva_1",
 		"title": "Aldaviva 1",
 		"client": "personal use",
 		"medium": "web site",
 		"year": "2005",
 		"src": "aldaviva_1.jpg"
-	},
-	{
+	},{
 		"id": "uploader",
 		"title": "Uploader",
 		"client": "personal use",
@@ -220,8 +160,7 @@
 		"year": "2005",
 		"description": "My first web application, where I learned about PHP, file uploads, access control, pre-AJAX Javascript integration, and usability.",
 		"src": "Uploader.jpg"
-	},
-	{
+	},{
 		"id": "thlaundry",
 		"title": "THLaundry",
 		"client": "Technology House",
@@ -229,16 +168,14 @@
 		"year": "2010",
 		"src": "thlaundry.jpg",
 		"link": "http://thlaundry.techhouse.org"
-	},
-	{
+	},{
 		"id": "republic_of_the_southern_cross",
 		"title": "Republic of the Southern Cross: Disaster Analysis",
 		"client": "Russian 1200 at Brown University",
 		"medium": "web site",
 		"year": "2010",
 		"src": "starcity.jpg"
-	},
-	{
+	},{
 		"id": "photography_mk3",
 		"title": "Tech House Photography Mk.III",
 		"client": "Technology House",
@@ -246,24 +183,21 @@
 		"year": "2010",
 		"src": "techhousephotography.jpg",
 		"link": "https://techhouse.org/photogallery"
-	},
-	{
+	},{
 		"id": "apparel",
 		"title": "Tech House Apparel",
 		"client": "Technology House",
 		"medium": "web application",
 		"year": "2011",
 		"src": "thapparel.jpg"
-	},
-	{
+	},{
 		"id": "recruiting_flyer",
 		"title": "Cisco Recruiting Flyer",
 		"client": "Cisco Systems",
 		"medium": "flyer",
 		"year": "2010",
 		"src": "ciscorecruiting.jpg"
-	},
-	{
+	},{
 		"id": "map",
 		"title": "Tech House Map",
 		"client": "Literary Arts 1010D at Brown University",
@@ -271,184 +205,155 @@
 		"year": "2009",
 		"src": "techhousemap.jpg",
 		"link": "http://aldaviva.com/map"
-	},
-	{
+	},{
+		"id": "keepandshare_print",
+		"title": "Calendar Printing",
+		"client": "KeepandShare",
+		"medium": "web application",
+		"year": "2007",
+		"src": "keepandshare_print_dialog.png"
+	},{
 		"id": "panoramas",
 		"title": "Panoramas",
 		"client": "Literary Arts 1110C at Brown University",
 		"medium": "3D virtual reality interactive simulation",
 		"year": "2007",
 		"src": "panoramas.jpg"
-	},
-	{
+	},{
 		"id": "campus_safety_map",
 		"title": "Nighttime Campus Safety",
 		"client": "Geology 1320 at Brown University",
 		"medium": "poster",
 		"year": "2007",
 		"src": "campussafetymap.jpg"
-	},
-	{
+	},{
 		"id": "nysc",
 		"title": "NYSC Yearbook",
 		"client": "the National Youth Science Foundation",
 		"medium": "web site and DVD",
 		"year": "2009",
-		"src": "nysc.jpg"
-	},
-	{
+		"src": "nysc.jpg",
+				"link": "http://2009.nysc.org/index.html"
+	},{
 		"id": "crew_banquet_2007",
 		"title": "Crew Banquet 2007",
 		"client": "the Warwick Valley Crew Club",
 		"medium": "slideshow and video",
 		"year": "2007",
 		"src": "crew_banquet_2007.jpg"
-	},
-	{
+	},{
 		"id": "crew_banquet_2008",
 		"title": "Crew Banquet 2008",
 		"client": "the Warwick Valley Crew Club",
 		"medium": "slideshow and video",
 		"year": "2008",
 		"src": "crew_banquet_2008.jpg"
-	},
-	{
+	},{
 		"id": "coal_powered_websites",
 		"title": "Coal-Powered Industrial Websites",
 		"client": "Cisco Systems",
 		"medium": "flyer",
 		"year": "2011",
 		"src": "coalpoweredwebsites.jpg"
-	},
-	{
+	},{
 		"id": "roommate_wanted",
 		"title": "Roommate Wanted",
 		"client": "personal use",
 		"medium": "flyer",
 		"year": "2011",
 		"src": "roommate_wanted.jpg"
-	},
-	{
-		"id": "fathers_day_2011",
-		"title": "Happy Father's Day!",
-		"client": "Mr. Hutchison",
-		"medium": "card",
-		"year": "2011",
-		"src": "fathersday2011.jpg"
-	},
-	{
+	},{
 		"id": "ctx_admin",
 		"title": "Cisco TelePresence Exchange System Administration",
 		"client": "Cisco Systems",
 		"medium": "web application",
 		"year": "2011",
 		"src": "ctx_logcapture.png"
-	},
-	{
+	},{
 		"id": "myvrm",
 		"title": "myVRM-X Scheduling Portal",
 		"client": "myVRM",
 		"medium": "web site mock-up",
 		"year": "2011",
 		"src": "myvrm.png"
-	},
-	{
+	},{
 		"id": "ciscolive",
 		"title": "Cisco TelePresence Active Meeting Management for iPad",
 		"client": "Cisco Systems",
 		"medium": "web application",
 		"year": "2011",
 		"src": "ciscolive.png"
-	},
-	{
+	},{
 		"id": "ctx_upgrade_admin",
 		"title": "Cisco TelePresence Exchange System Upgrade",
 		"client": "Cisco Systems",
 		"medium": "web application",
 		"year": "2011",
 		"src": "ctx-upgrade-admin.png"
-	},
-	{
+	},{
 		"id": "skinny",
 		"title": "Project Skinny",
 		"client": "Blue Jeans Network",
 		"medium": "browser-based video conferencing client",
 		"year": "2012",
 		"src": "skinny-ui.jpg"
-	},
-	{
-		"id": "acid",
-		"title": "Acid",
-		"client": "Blue Jeans Network",
-		"medium": "iOS video conferencing client",
-		"year": "2012",
-		"src": "acid.jpg"
-	},
-	{
+	},{
 		"id": "skinny_dashboard",
 		"title": "Tailor",
 		"client": "Blue Jeans Network",
 		"medium": "dashboard",
 		"year": "2012",
 		"src": "skinnydashboard.png"
-	},
-	{
+	},{
 		"id": "cashman",
 		"title": "Cashman and Wallette",
 		"client": "personal use",
 		"medium": "cloud application and mobile client",
 		"year": "2012",
 		"src": "wallette.png"
-	},
-	{
+	},{
 		"id": "eircd",
 		"title": "eircd",
 		"client": "personal use",
 		"medium": "IRC server",
 		"year": "2012",
 		"src": "eircd.jpg"
-		},
-	{
+	},{
 		"id": "skinny_developer_console",
 		"title": "Developer Console",
 		"client": "Blue Jeans Network",
 		"medium": "cheat code",
 		"year": "2012",
 		"src": "skinny_developer_console.png"
-	},
-	{
+	},{
 		"id": "lumberjack",
 		"title": "Lumberjack",
 		"client": "Blue Jeans Network",
 		"medium": "web application",
 		"year": "2012",
 		"src": "lumberjack.png"
-	},
-	{
+	},{
 		"id": "rollway",
 		"title": "Rollway",
-		"client": "Blue Jeans Network",
+		"client": "Blue Jeans Support",
 		"medium": "server",
 		"year": "2013",
 		"src": "rollway-ui.png"
-	},
-	{
+	},{
 		"id": "buildonwrite",
 		"title": "Build on Write",
 		"client": "Blue Jeans Network",
 		"medium": "script",
 		"year": "2013",
 		"src": "buildonwrite.png"
-	},
-	{
+	},{
 		"id": "quotables",
 		"title": "Quotables",
-		"client": "personal use",
+		"client": "Blue Jeans Network",
 		"medium": "dashboard",
 		"year": "2013",
 		"src": "quotables.jpg"
-	},
-	{
+	},{
 		"id": "rollway_analytics",
 		"title": "Rollway Analytics",
 		"client": "Blue Jeans Network",
@@ -469,13 +374,117 @@
 		"medium": "dashboard",
 		"year": "2013",
 		"src": "shipit.png"
-	},
-	{
+	},{
+		"id": "panoptichrome",
+		"title": "Panoptichrome",
+		"client": "Blue Jeans Network",
+		"medium": "web application and Chrome extension",
+		"year": "2013",
+		"src": "panoptichrome.png"
+	},{
 		"id": "ratelimiting",
 		"title": "Strategies for Rate-Limiting",
 		"client": "Blue Jeans Network",
 		"medium": "poster",
 		"year": "2013",
 		"src": "ratelimiting.png"
+	},{
+		"id": "leaderboard",
+		"title": "Sales Leaders",
+		"client": "Blue Jeans Sales",
+		"medium": "dashboard",
+		"year": "2013",
+		"src": "leaderboard.jpg"
+	},{
+		"id": "floorplan",
+		"title": "Floorplan",
+		"client": "Blue Jeans HR",
+		"medium": "web site",
+		"year": "2013",
+		"src": "floorplan.jpg"
+	},{
+		"id": "floorplan-admin",
+		"title": "Floorplan Administration",
+		"client": "Blue Jeans HR",
+		"medium": "web application",
+		"year": "2013",
+		"src": "floorplan-admin.jpg"
+	},{
+		"id": "bricked",
+		"title": "Bricked",
+		"client": "Blue Jeans Network",
+		"medium": "dashboard",
+		"year": "2013",
+		"src": "bricked.jpg"
+	},{
+		"id": "partitionmagick",
+		"title": "PartitionMagick",
+		"client": "Maulik Shah (Blue Jeans Ops)",
+		"medium": "dashboard",
+		"year": "2013",
+		"src": "partitionmagick.png"
+	},{
+		"id": "joinflow_wireframes",
+		"title": "Join Flow Functional Design",
+		"client": "Blue Jeans Network",
+		"medium": "slideshow",
+		"year": "2013",
+		"src": "joinflow_wireframes.png"
+	},{
+		"id": "harbor",
+		"title": "Harbor",
+		"client": "Blue Jeans Network",
+		"medium": "documentation generator",
+		"year": "2013",
+		"src": "harbor.png"
+	},{
+		"id": "ice",
+		"title": "Catalyst",
+		"client": "Blue Jeans Network",
+		"medium": "application server, remoting client, and mobile app",
+		"year": "2013",
+		"src": "ice.png"
+	},{
+		"id": "dropship",
+		"title": "Dropship",
+		"client": "Blue Jeans Network",
+		"medium": "web application",
+		"year": "2013",
+		"src": "dropship.png"
+	},{
+		"id": "hours_since_xcode_crashed",
+		"title": "Hours Since Xcode Crashed",
+		"client": "Blue Jeans Network",
+		"medium": "dashboard",
+		"year": "2014",
+		"src": "xcode.png"
+	},{
+		"id": "release_timeline",
+		"title": "Release Timeline",
+		"client": "Blue Jeans Network",
+		"medium": "dashboard",
+		"year": "2014",
+		"src": "release_timeline.jpg"
+	},{
+		"id": "sieve",
+		"title": "Sieve",
+		"client": "Blue Jeans Network",
+		"medium": "dashboard",
+		"year": "2014",
+		"src": "sieve.png"
+	},{
+		"id": "accolades_dashboard",
+		"title": "Accolades",
+		"client": "Blue Jeans HR",
+		"medium": "dashboard",
+		"year": "2014",
+		"src": "accolades_dashboard.png"
+	},{
+		"id": "accolades_admin",
+		"title": "Accolades Administration",
+		"client": "Blue Jeans HR",
+		"medium": "web application",
+		"year": "2014",
+		"src": "accolades_admin.png"
 	}
 ]
