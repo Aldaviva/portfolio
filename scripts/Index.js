@@ -16,7 +16,8 @@ window.Index = function(){
 
 	this.renderTwitterStatus = function(twitterStatus){
 		var message = twitterStatus.body;
-		var words = message.match(/\s+/g).length + 1;
+		var spaces = message.match(/\s+/g);
+		var words = (spaces === null) ? 1 : spaces.length + 1;
 		$('#twitterMessage').text(message);
 	};
 
