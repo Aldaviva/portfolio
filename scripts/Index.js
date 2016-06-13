@@ -6,7 +6,6 @@ window.Index = function(){
 		_.bindAll(this);
 
 		this.fetchTwitterStatus();
-		this.fetchThisIsMyJamStatus();
 		this.fetchFlickrStatus();
 	};
 
@@ -17,27 +16,7 @@ window.Index = function(){
 	this.renderTwitterStatus = function(twitterStatus){
 		var message = twitterStatus.body;
 		var spaces = message.match(/\s+/g);
-		var words = (spaces === null) ? 1 : spaces.length + 1;
 		$('#twitterMessage').text(message);
-	};
-
-	this.fetchThisIsMyJamStatus = function(){
-		$.getJSON(API_ROOT + "thisismyjam/aldaviva", this.renderThisIsMyJamStatus);
-	};
-
-	this.renderThisIsMyJamStatus = function(thisIsMyJamStatus){
-		if(thisIsMyJamStatus !== null){
-			var artist = thisIsMyJamStatus.artist;
-			var title = thisIsMyJamStatus.title;
-
-			$('.thisismyjam')
-				.find('a')
-					.text(title + ' by ' + artist)
-					.end()
-				.show();
-		} else {
-		    $('.thisismyjam').remove();
-		}
 	};
 
 	this.fetchFlickrStatus = function(){
