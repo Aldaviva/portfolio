@@ -1,1 +1,1 @@
-lessc -m all.less all.css
+lessc all.less all.css

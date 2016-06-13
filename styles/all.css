@@ -147,7 +147,7 @@ a:hover img {
 }
 /* Functions */
 .wood-background {
-  background-image: url('../images/wood.jpg');
+  background-image: url('https://c2.staticflickr.com/8/7441/27541729242_fe7bfafbaf_o.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
@@ -217,7 +217,7 @@ a:hover img {
   height: 1px;
   display: inline-block;
   vertical-align: top;
-  width: 18.400000000000002px;
+  width: 18.4px;
   text-indent: 0;
 }
 #index aside a:hover {
@@ -232,7 +232,7 @@ a:hover img {
   display: none;
 }
 #index {
-  background-image: url('../images/wood.jpg');
+  background-image: url('https://c2.staticflickr.com/8/7441/27541729242_fe7bfafbaf_o.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
@@ -270,7 +270,7 @@ a:hover img {
 }
 #works header {
   height: 102px;
-  background-image: url('../images/wood.jpg');
+  background-image: url('https://c2.staticflickr.com/8/7441/27541729242_fe7bfafbaf_o.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
@@ -320,7 +320,6 @@ a:hover img {
   position: fixed;
   bottom: 0;
   /*overflow: hidden;*/
-
   overflow-x: auto;
   overflow-y: hidden;
   left: 0;
@@ -342,7 +341,6 @@ a:hover img {
 #works #listPanel li .year {
   position: absolute;
   top: 8px;
-  font-weight: bold;
   font-size: 9px;
   color: #808080;
   font-family: 'Futura';
