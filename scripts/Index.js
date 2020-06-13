@@ -14,9 +14,17 @@ window.Index = function(){
 	};
 
 	this.renderTwitterStatus = function(twitterStatus){
+		var messageEl = $('#twitterMessage');
 		var message = twitterStatus.body;
-		var spaces = message.match(/\s+/g);
-		$('#twitterMessage').text(message);
+		var messageLines = message.split(/\r?\n/g);
+
+		messageEl.empty();
+		_.each(messageLines, function(messageLine, lineNumber){
+		    if(lineNumber > 0){
+		        messageEl.append($("<br/>"));
+		    }
+		    messageEl.append(document.createTextNode(messageLine));
+		});
 	};
 
 	this.fetchFlickrStatus = function(){
