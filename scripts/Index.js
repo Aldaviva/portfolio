@@ -7,6 +7,7 @@ window.Index = function(){
 
 		this.fetchTwitterStatus();
 		this.fetchFlickrStatus();
+		this.fetchGithubStatus();
 	};
 
 	this.fetchTwitterStatus = function(){
@@ -43,6 +44,21 @@ window.Index = function(){
 			href: thumbnailHref,
 			title: '"' + title + '" on Flickr'
 		});
+	};
+
+	this.fetchGithubStatus = function(){
+		$.getJSON(API_ROOT + "github/Aldaviva", this.renderGithubStatus);
+	};
+
+	this.renderGithubStatus = function(githubStatus){
+		var messageEl = $('#commitMessage');
+		var message = githubStatus.message;
+		var webDiffUrl = githubStatus.webDiffUrl;
+
+		messageEl.empty()
+			.text(message)
+			.closest('a')
+			.attr("href", webDiffUrl);
 	};
 
 	this.initialize();
