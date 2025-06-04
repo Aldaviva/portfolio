@@ -5,18 +5,18 @@ window.Index = function(){
 	this.initialize = function(){
 		_.bindAll(this);
 
-		this.fetchTwitterStatus();
+		this.fetchBlueskyStatus();
 		this.fetchFlickrStatus();
 		this.fetchGithubStatus();
 	};
 
-	this.fetchTwitterStatus = function(){
-		$.getJSON(API_ROOT + "twitter/aldaviva", this.renderTwitterStatus);
+	this.fetchBlueskyStatus = function(){
+		$.getJSON(API_ROOT + "bluesky/aldaviva.com", this.renderBlueskyStatus);
 	};
 
-	this.renderTwitterStatus = function(twitterStatus){
-		var messageEl = $('#twitterMessage');
-		var message = twitterStatus.body;
+	this.renderBlueskyStatus = function(blueskyStatus){
+		var messageEl = $('#blueskyMessage');
+		var message = blueskyStatus.body;
 		var messageLines = message.split(/\r?\n/g);
 
 		messageEl.empty();
