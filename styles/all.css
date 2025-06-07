@@ -126,7 +126,7 @@ legend {
 /* Default Values */
 /* Default Styles*/
 body {
-  color: #ffffff;
+  color: white;
   width: 100%;
   min-height: 100%;
   background-color: #060403;
@@ -134,7 +134,7 @@ body {
   position: absolute;
 }
 a {
-  color: #ffffff;
+  color: white;
   text-decoration: none;
 }
 a:hover {
@@ -147,7 +147,7 @@ a:hover img {
 }
 /* Functions */
 .wood-background {
-  background-image: url('https://west.aldaviva.com/images/wood.jpg');
+  background-image: url('../images/wood.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
@@ -217,7 +217,7 @@ a:hover img {
   height: 1px;
   display: inline-block;
   vertical-align: top;
-  width: 18.400000000000002px;
+  width: 18.4px;
   text-indent: 0;
 }
 #index aside a:hover {
@@ -228,11 +228,8 @@ a:hover img {
   border-radius: 3px;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.4);
 }
-#index aside .thisismyjam {
-  display: none;
-}
 #index {
-  background-image: url('https://west.aldaviva.com/images/wood.jpg');
+  background-image: url('../images/wood.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
@@ -266,16 +263,16 @@ a:hover img {
   overflow-y: auto;
 }
 #works .pane_background {
-  background-color: rgba(0, 0, 0, 0.88);
+  background-color: hsla(0, 0%, 0%, 0.88);
 }
 #works header {
   height: 102px;
-  background-image: url('https://west.aldaviva.com/images/wood.jpg');
+  background-image: url('../images/wood.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
   background-position: 0 87%;
-  box-shadow: inset 0 -4px 8px #000000;
+  box-shadow: inset 0 -4px 8px black;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -303,33 +300,32 @@ a:hover img {
   width: 100%;
   bottom: 150px;
   margin: 8px auto 0;
-  color: #ababab;
+  color: hsl(0, 0%, 67%);
   font: 13px "AvantGarde";
 }
 #works #selectedItemPanel > div .note span {
-  background-color: rgba(0, 0, 0, 0.88);
+  background-color: hsla(0, 0%, 0%, 0.88);
   padding: 8px 11px 6px;
   line-height: 17px;
   border-radius: 5px;
 }
 #works #selectedItemPanel > div .note em {
-  color: #ffffff;
+  color: white;
   font-style: normal;
 }
 #works #listPanel {
   position: fixed;
   bottom: 0;
   /*overflow: hidden;*/
-
   overflow-x: auto;
   overflow-y: hidden;
   left: 0;
   right: 0;
   white-space: nowrap;
   padding-bottom: 17px;
-  border-top: 1px solid #2b2b2b;
+  border-top: 1px solid hsl(0, 0%, 17%);
   cursor: move;
-  background-color: rgba(0, 0, 0, 0.88);
+  background-color: hsla(0, 0%, 0%, 0.88);
 }
 #works #listPanel li {
   vertical-align: top;
@@ -342,9 +338,8 @@ a:hover img {
 #works #listPanel li .year {
   position: absolute;
   top: 8px;
-  font-weight: bold;
   font-size: 9px;
-  color: #808080;
+  color: hsl(0, 0%, 50%);
   font-family: 'Futura';
   font-weight: bold;
 }
@@ -357,8 +352,8 @@ a:hover img {
   margin-left: 17px;
 }
 #works #listPanel li.selected {
-  border-top-color: rgba(255, 255, 255, 0.75);
+  border-top-color: hsla(0, 0%, 100%, 0.75);
 }
 #works #listPanel li:hover:not(.selected) {
-  border-top-color: rgba(255, 255, 255, 0.35);
+  border-top-color: hsla(0, 0%, 100%, 0.35);
 }
